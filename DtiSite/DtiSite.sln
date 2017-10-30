@@ -4,10 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{92213A76-605E-4FE8-B406-B7F93B2E9E99}"
+	ProjectSection(SolutionItems) = preProject
+		css\animate.css = css\animate.css
+		css\fonts.css = css\fonts.css
+		css\new.css = css\new.css
+		css\responsive.css = css\responsive.css
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{D01A5539-1562-4236-A6F1-DA55BC36A88C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{F1A67A78-B547-4BC0-ADFB-C85907987ACE}"
+	ProjectSection(SolutionItems) = preProject
+		js\jquery.nicescroll.min.js = js\jquery.nicescroll.min.js
+		js\wow.min.js = js\wow.min.js
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{B7A0346E-3B67-41A2-BC50-A0527A1A3D11}"
 EndProject
@@ -19,6 +29,12 @@ EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92213A76-605E-4FE8-B406-B7F93B2E9E99} = {11107927-3903-4FC0-B14E-77146469152D}
+		{D01A5539-1562-4236-A6F1-DA55BC36A88C} = {11107927-3903-4FC0-B14E-77146469152D}
+		{F1A67A78-B547-4BC0-ADFB-C85907987ACE} = {11107927-3903-4FC0-B14E-77146469152D}
+		{B7A0346E-3B67-41A2-BC50-A0527A1A3D11} = {11107927-3903-4FC0-B14E-77146469152D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B87E0BD-C2D6-4661-828C-AC06D04513D5}

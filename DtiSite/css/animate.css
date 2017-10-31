@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -3155,4 +3155,33 @@ Copyright (c) 2014 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
+}
+
+@-webkit-keyframes changeBackground {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.base-animation{
+    min-height: 600px;
+    -webkit-animation-name: changeBackground;
+    animation-name: changeBackground;
 }

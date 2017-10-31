@@ -130,6 +130,7 @@
             Card 2x2
         </div>
     </div>
+    <div class="map" id="mapa"></div>
     <div id="section-footer">
         <div class="col-md-6 col-lg-4 col-xs-12">
             <div class="row container-social">
@@ -144,6 +145,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99xj6wbcH4a0-oXTY4df5jeVVjLOTgE0&callback=initMap"></script>
     <script>
         new WOW().init();
         $(function () {
@@ -155,6 +157,18 @@
                 cursorborder: "none",
             });
         });
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('mapa'), {
+                center: { lat: -19.938614, lng: -43.933623 },
+                zoom: 18
+            });
+            var marker = new google.maps.Marker({
+                scaledSize: new google.maps.Size(50, 50),
+                position: { lat: -19.938614, lng: -43.933623 },
+            });
+            marker.setMap(map);
+        }
     </script>
 </body>
 </html>

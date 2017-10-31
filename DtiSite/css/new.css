@@ -191,7 +191,7 @@ img {
     clear: both;
     display: table;
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
     #section-footer .social {
@@ -205,8 +205,10 @@ img {
         }
 
     #section-footer .topo {
-        display:block;
+        display: block;
         height: 150px;
+        padding-top: 20px;
+        padding-left: 25px;
         text-align: start;
     }
 
@@ -225,8 +227,9 @@ img {
     }
 
     #section-footer .contato {
-        display:block;
-        height: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
         text-align: center;
     }
 

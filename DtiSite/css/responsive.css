@@ -3,6 +3,11 @@
     #section-main {
         max-height: 660px;
     }
+
+    #section-cards .card-square {
+        width: 33.3%;
+        padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */
+    }
 }
 
 /* Small Devices, Tablets */
@@ -16,12 +21,34 @@
         float: left;
         text-align: center;
     }
+
+    #section-cards .card-square {
+        width: 33.3%;
+        padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */
+    }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width : 720px) {
+    #section-main {
+        height: 590px;
+    }
+
+    #section-cards .card-square {
+        width: 50%;
+        padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
+    }
 }
 
 /* Mobile Devices */
 @media only screen and (max-width : 640px) {
     #section-main {
         height: 590px;
+    }
+
+    #section-cards .card-square {
+        width: 50%;
+        padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
     }
 }
 
@@ -36,5 +63,10 @@
 @media only screen and (max-width : 320px) {
     #section-main {
         height: 480px;
+    }
+
+    #section-cards .card-square {
+        width: 50%;
+        padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
     }
 }

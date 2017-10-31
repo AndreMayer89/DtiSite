@@ -23,10 +23,12 @@ img {
     padding-right: 0;
 }
 
-#section-cards .card-simples-texto {
+#section-cards .card-duplo-imagem {
+    float: left;
+    position: relative;
     width: 100%;
-    text-align: center;
-    border: 1px black solid;
+    padding-bottom: 50%;
+    overflow: hidden;
 }
 
 .card-square {

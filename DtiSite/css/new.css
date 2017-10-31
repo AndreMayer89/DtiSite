@@ -193,6 +193,7 @@ img {
     clear: both;
     display: table;
     width: 100%;
+    height: 500px;
 }
 
     #section-footer .social {
@@ -205,10 +206,56 @@ img {
             color: rgb(255,255,255);
         }
 
+    #section-footer .topo {
+        display:block;
+        height: 150px;
+        text-align: start;
+    }
+
+        #section-footer .topo .texto-titulo {
+            font-size:24px;
+            font:Poppins;
+        }
+
+        #section-footer .topo .texto {
+            font-size:16px;
+        }
+
+    #section-footer .meio {
+        display:block;
+        height: 150px;
+    }
+
+    #section-footer .contato {
+        display:block;
+        height: 150px;
+        text-align: center;
+    }
+
+        #section-footer .texto-titulo {
+            font-size:16px;
+            font-weight:bold;
+            width:100%;
+        }
+
+        #section-footer .texto {
+            font-size:12px;
+            width:100%;
+        }
+
+        #section-footer .texto-telefone {
+            font-size:16px;
+            width:100%;
+        }
+
 .subtitulo-principal {
     color: rgb(0,0,0);
 }
 
 .map {
     height: 500px;
+}
+
+.fonte-branca {
+    color: #FFFFFF;
 }

@@ -169,3 +169,7 @@ img {
 .subtitulo-principal {
     color: rgb(0,0,0);
 }
+
+.map {
+    height: 500px;
+}

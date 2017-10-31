@@ -17,13 +17,52 @@ img {
     min-height: 600px;
 }
 
-.card-simples {
+.card-simples-texto {
     width: 100%;
-    padding-bottom: 100%;
-    background-image: url('your_img');
-    background-size: cover;
+    text-align: center;
     border: 1px black solid;
 }
+
+.card-simples-imagem {
+    width: 100%;
+    padding-bottom: 100%;
+    text-align: center;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px black solid;
+}
+
+    .card-simples-imagem.sq1 {
+        background-image: url(../img/sq1.png);
+    }
+
+    .card-simples-imagem.sq2 {
+        background-image: url(../img/sq2.png);
+    }
+
+    .card-simples-imagem.sq3 {
+        background-image: url(../img/sq3.png);
+    }
+
+    .card-simples-imagem.sq4 {
+        background-image: url(../img/sq4.png);
+    }
+
+    .card-simples-imagem.sq5 {
+        background-image: url(../img/sq5.png);
+    }
+
+    .card-simples-imagem.sq6 {
+        background-image: url(../img/sq6.png);
+    }
+
+    .card-simples-imagem.sq7 {
+        background-image: url(../img/sq7.png);
+    }
+
+    .card-simples-imagem.sq8 {
+    }
 
 .card-simples:active {
     background-color: rgba(0, 148, 255, 0.5);

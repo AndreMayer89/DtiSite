@@ -10,6 +10,12 @@
     #section-main {
         height: 600px;
     }
+
+    #section-footer .container-social .social {
+        width: 24%;
+        float: left;
+        text-align: center;
+    }
 }
 
 /* Mobile Devices */

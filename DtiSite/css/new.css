@@ -10,7 +10,12 @@ img {
 }
 
 .main-img-container {
-    background: url(../img/main-bg.png)no-repeat;
+    background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
     color: #FFFFFF;
     text-align: center;
     background-position: 50% 50%;
@@ -193,6 +198,7 @@ img {
             color: #FFFFFF;
             font-size: 64px;
             font-weight: bold;
+            font-family: Poppins;
         }
 
         #section-cards .card-quadruplo-imagem.cases:after {
@@ -228,7 +234,7 @@ img {
 
         #section-footer .topo .texto-titulo {
             font-size: 24px;
-            font: Poppins;
+            font-family: Poppins;
         }
 
         #section-footer .topo .texto {

@@ -16,12 +16,6 @@
         height: 600px;
     }
 
-    #section-footer .container-social .social {
-        width: 24%;
-        float: left;
-        text-align: center;
-    }
-
     #section-cards .card-square {
         width: 33.3%;
         padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */

@@ -43,16 +43,17 @@ img {
 
 #section-cards .card-simples-imagem .card-content {
     position: absolute;
-    height: 100%; /* = 100% - 2*5% padding */
-    width: 80%; /* = 100% - 2*5% padding */
+    height: 100%; /* = 100% - 2*padding */
+    width: 80%; /* = 100% - 2*padding */
     padding-left: 10%;
     padding-right: 10%;
 }
 
 #section-cards .card-duplo-imagem .card-content {
     position: absolute;
-    height: 100%; /* = 100% - 2*5% padding */
-    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    font-size: 24px;
 }
 
 #section-cards .card-table {
@@ -191,9 +192,9 @@ img {
             font-weight: bold;
         }
 
-    #section-cards .card-quadruplo-imagem.cases:after {
-        background-image: url(../img/cases.png);
-    }
+        #section-cards .card-quadruplo-imagem.cases:after {
+            background-image: url(../img/cases.png);
+        }
 
 #section-footer {
     background-color: rgb(45,181,194);
@@ -223,16 +224,16 @@ img {
     }
 
         #section-footer .topo .texto-titulo {
-            font-size:24px;
-            font:Poppins;
+            font-size: 24px;
+            font: Poppins;
         }
 
         #section-footer .topo .texto {
-            font-size:16px;
+            font-size: 16px;
         }
 
     #section-footer .meio {
-        display:block;
+        display: block;
         height: 150px;
     }
 
@@ -243,21 +244,21 @@ img {
         text-align: center;
     }
 
-        #section-footer .texto-titulo {
-            font-size:16px;
-            font-weight:bold;
-            width:100%;
-        }
+    #section-footer .texto-titulo {
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+    }
 
-        #section-footer .texto {
-            font-size:12px;
-            width:100%;
-        }
+    #section-footer .texto {
+        font-size: 12px;
+        width: 100%;
+    }
 
-        #section-footer .texto-telefone {
-            font-size:16px;
-            width:100%;
-        }
+    #section-footer .texto-telefone {
+        font-size: 16px;
+        width: 100%;
+    }
 
 .subtitulo-principal {
     color: rgb(0,0,0);
@@ -280,27 +281,28 @@ img {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
     from {
-        width: 0
+        width: 0;
     }
 
     to {
-        width: 100%
+        width: 100%;
     }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to {
-        border-color: transparent
+        border-color: transparent;
     }
 
     50% {
-        border-color: orange
+        border-color: orange;
     }
 }
 
@@ -314,10 +316,10 @@ img {
     position: relative; /* allow for absolute positioning of child elements */
 }
 
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

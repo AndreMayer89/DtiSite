@@ -39,6 +39,10 @@ img {
         animation-name: changeBackground;
     }
 
+        #section-main .main-overlay .middle-filler {
+            height: 50%;
+        }
+
         #section-main .main-overlay p {
             color: #4a4a4a;
             font-family: Poppins;

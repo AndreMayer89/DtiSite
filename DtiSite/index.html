@@ -50,7 +50,13 @@
     </header>
     <div id="section-cards">
         <div class="card-duplo-imagem">
-            Efeito digitação
+            <div class="card-content">
+                <div class="card-table">
+                    <div class="card-table-cell">
+                        <div class="typewriter">somos dti digital</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card-square card-simples-imagem sq1">
             <div class="card-content">
@@ -62,10 +68,12 @@
             </div>
         </div>
         <div class="card-square card-simples-imagem sq2">
-            <div class="card-content">
-                <div class="card-table">
-                    <div class="card-table-cell">
-                        <div class=""></div>
+            <div class="card-content" style="    width: 100%;    padding-left: 0;    padding-right: 0;">
+                <div class="card-table" style="height:100%;">
+                    <div class="card-table-cell" style="height:100%;">
+                        <!--<div class="videoWrapper">
+                            <iframe frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/c2BQNozJVW8?autohide=1&amp;autoplay=1&amp;fs=0&amp;showinfo=0&amp;modestBranding=1&amp;start=0&amp;controls=0&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;playlist=c2BQNozJVW8"></iframe>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -85,7 +93,7 @@
                     <div class="card-table-cell">
                         <div class="text-header">Mantenha-se antenado</div>
                         <div class="text-pre">GARTNER</div>
-                        <div class="text-content">aumented reality in mobile apps</div>
+                        <div class="text-content">augmented reality in mobile apps</div>
                     </div>
                 </div>
             </div>
@@ -183,6 +191,10 @@
                 cursorborderradius: "10px",
                 cursorborder: "none",
             });
+
+            $(document).on('click', '.sq4', function () {
+                window.open('http://blogs.gartner.com/marty-resnick/2017/09/19/augmented-reality-in-mobile-apps/');
+            })
         });
 
         function initMap() {

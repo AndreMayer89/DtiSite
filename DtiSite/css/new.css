@@ -1,4 +1,7 @@
-﻿#section-main {
+﻿body {
+    font-family: Open Sans;
+}
+#section-main {
     height: 650px;
 }
 

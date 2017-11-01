@@ -2,30 +2,34 @@
     font-family: Open Sans;
 }
 
-#section-main {
-    height: 650px;
-}
-
 img {
     max-width: 100%;
 }
 
-.main-img-container {
-    background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
-    background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-    background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-    background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-    background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-    color: #FFFFFF;
-    text-align: center;
-    background-position: 50% 50%;
-    background-size: cover;
-    overflow: hidden;
-    padding-bottom: 100px;
-    min-height: 600px;
-    position: relative;
+#section-main {
+    height: 650px;
 }
+
+    #section-main h2 {
+        color: rgb(0,0,0);
+    }
+
+    #section-main.main-img-container {
+        background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
+        background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+        background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+        background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+        background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+        color: #FFFFFF;
+        text-align: center;
+        background-position: 50% 50%;
+        background-size: cover;
+        overflow: hidden;
+        padding-bottom: 100px;
+        min-height: 600px;
+        position: relative;
+    }
 
 #section-cards > div {
     padding-left: 0;
@@ -259,18 +263,18 @@ img {
             font-weight: 700;
         }
 
-    #section-footer .address-description {
-        font-size: 12px;
-        font-weight: 400;
-    }
+        #section-footer .contato .address-description {
+            font-size: 12px;
+            font-weight: 400;
+        }
 
-    #section-footer .phone-description {
-        font-weight: 400;
-    }
+        #section-footer .contato .phone-description {
+            font-weight: 400;
+        }
 
-    #section-footer .email-description {
-        font-weight: 700;
-    }
+        #section-footer .contato .email-description {
+            font-weight: 700;
+        }
 
     #section-footer .container-social {
         text-align: center;
@@ -292,11 +296,6 @@ img {
             }
 /*--------------------FOOTER--------------------*/
 /*----------------------------------------------*/
-
-
-.subtitulo-principal {
-    color: rgb(0,0,0);
-}
 
 .map {
     height: 500px;

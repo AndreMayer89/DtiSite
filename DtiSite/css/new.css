@@ -297,6 +297,30 @@ img {
 /*--------------------FOOTER--------------------*/
 /*----------------------------------------------*/
 
+.dive {
+    padding-top: 45px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    .dive .dive-title {
+        color: #524da0;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .dive .dive-description {
+        color: #39393a;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 45px;
+        text-align: left;
+    }
+
 .map {
     height: 500px;
 }

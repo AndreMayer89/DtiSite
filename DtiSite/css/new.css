@@ -13,29 +13,58 @@ img {
 /*----------------------------------------------*/
 /*---------------------MAIN---------------------*/
 #section-main {
+    background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    color: #FFFFFF;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 100px;
     height: 650px;
+    position: relative;
 }
 
-    #section-main h2 {
-        color: rgb(0,0,0);
+    #section-main .main-overlay {
+        padding-left: 5%;
     }
 
-    #section-main.main-img-container {
-        background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
-        background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-        background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-        background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-        background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
-        color: #FFFFFF;
-        text-align: center;
-        background-position: 50% 50%;
-        background-size: cover;
-        overflow: hidden;
-        padding-bottom: 100px;
-        min-height: 600px;
-        position: relative;
+        #section-main .main-overlay p {
+            color: #4a4a4a;
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 50px;
+            color: rgb(0,0,0);
+        }
+
+    #section-main .description {
+        display: table-cell;
+        vertical-align: bottom;
     }
+
+        #section-main .description h1 {
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 64px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #section-main .description p.main-description {
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 10%;
+            margin-right: 10%;
+            line-height: normal;
+        }
 /*---------------------MAIN---------------------*/
 /*----------------------------------------------*/
 

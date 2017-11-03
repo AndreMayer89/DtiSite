@@ -92,6 +92,7 @@
 .section-areas {
     padding-top: 25px;
     margin-bottom: 35px;
+    border-bottom: 1px solid #AEAEAE;
 }
 
     .section-areas .title {
@@ -152,6 +153,32 @@
     margin-bottom: 35px;
     text-align: center;
 }
+
+.section-open-positions .container-positions {
+}
+
+    .section-open-positions .container-positions:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .section-open-positions .container-positions .position {
+        margin: 15px;
+        border: 1px solid #AEAEAE;
+        float: left;
+    }
+
+        .section-open-positions .container-positions .position:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .section-open-positions .container-positions .position > div {
+            float: left;
+            margin: 5px;
+        }
 
 /*-------------------------VAGAS ABERTAS-------------------------*/
 /*---------------------------------------------------------------*/

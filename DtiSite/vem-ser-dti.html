@@ -272,6 +272,12 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
+        var photos = ['DSC02875.jpg', 'DSC02783.jpg', 'DSC02780.jpg', 'DSC02778.jpg', 'DSC02777.jpg', 'DSC02784.jpg', 'DSC02787.jpg',
+            'DSC02795.jpg', 'DSC02796.jpg', 'DSC02802.jpg', 'DSC02807.jpg', 'DSC02809.jpg', 'DSC02810.jpg', 'DSC02813.jpg', 'DSC02815.jpg',
+            'DSC02817.jpg', 'DSC02819.jpg', 'DSC02821.jpg', 'DSC02824.jpg', 'DSC02828.jpg', 'DSC02832.jpg', 'DSC02834.jpg', 'DSC02836.jpg',
+            'DSC02837.jpg', 'DSC02839.jpg', 'DSC02841.jpg', 'DSC02842.jpg', 'DSC02844.jpg', 'DSC02847.jpg', 'DSC02848.jpg', 'DSC02850.jpg',
+            'DSC02851.jpg', 'DSC02856.jpg', 'DSC02858.jpg', 'DSC02860.jpg', 'DSC02862.jpg', 'DSC02863.jpg', 'DSC02865.jpg', 'DSC02866.jpg',
+            'DSC02869.jpg', 'DSC02878.jpg', 'DSC02883.jpg', 'DSC02886.jpg', 'DSC02889.jpg', 'DSC02890.jpg'];
         new WOW().init();
         $(function () {
             $('html').niceScroll({
@@ -281,7 +287,17 @@
                 cursorborderradius: "10px",
                 cursorborder: "1px solid #000000",
             });
+            setInterval(function () {
+                $.each($('.card-square.card-simples-imagem'), function () {
+                    alterarImagemFundoAleatorio($(this));
+                });
+            }, 5000);
         });
+
+        function alterarImagemFundoAleatorio(componente) {
+            var numero = Math.floor(Math.random() * photos.length);
+            componente.attr('style', 'background-image: url("../DtiSite/img/members/' + photos[numero] + '")');
+        }
     </script>
 </body>
 </html>

@@ -12,6 +12,11 @@
     padding-bottom: 16.66%; /* = width for a 1:1 aspect ratio */
     overflow: hidden;
     border: 1px solid black;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
 }
 
 .header-cards .card-simples-imagem .card-content {

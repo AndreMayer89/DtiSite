@@ -44,6 +44,10 @@
         width: 50%;
         padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
     }
+
+    .section-areas .container-areas .area.flexible-area {
+        width: 30%;
+    }
 }
 
 /* Smaller Mobile Devices */

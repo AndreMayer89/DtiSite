@@ -47,7 +47,7 @@
 /*-------------------------------------------------------------*/
 /*--------------------TRANSFORMAÇÃO DIGITAL--------------------*/
 .section-digital-transformation {
-    padding-top: 45px;
+    padding-top: 35px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -73,50 +73,147 @@
 /*-------------------------------------------------------------*/
 
 
+/*-------------------------MENSAGEM CEO-------------------------*/
+/*--------------------------------------------------------------*/
+.section-ceo-message {
+    background: rgb(44,176,197); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(44,176,197), rgb(109,127,163)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(44,176,197), rgb(109,127,163)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(44,176,197), rgb(109,127,163)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(44,176,197), rgb(109,127,163)); /* Standard syntax */
+    height: 300px;
+}
+
+/*-------------------------MENSAGEM CEO-------------------------*/
+/*--------------------------------------------------------------*/
+
 /*-------------------------------------------------------------*/
 /*----------------------------AREAS----------------------------*/
-.section-areas .title {
+.section-areas {
+    padding-top: 25px;
+    margin-bottom: 35px;
+}
+
+    .section-areas .title {
+        text-align: center;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .section-areas .container-areas {
+        text-align: center;
+        padding-left: 5%;
+    }
+
+        .section-areas .container-areas:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .section-areas .container-areas .area-spacer {
+            width: 5%;
+            float: left;
+        }
+
+        .section-areas .container-areas .area {
+            width: 15%;
+            float: left;
+            font-family: "Open Sans";
+        }
+
+            .section-areas .container-areas .area span {
+                color: #524da0;
+            }
+
+            .section-areas .container-areas .area .area-description {
+                font-size: 11px;
+                margin-bottom: 4px;
+            }
+
+            .section-areas .container-areas .area .spots {
+                font-size: 9px;
+            }
+
+/*----------------------------AREAS----------------------------*/
+/*-------------------------------------------------------------*/
+
+
+/*-------------------------VAGAS ABERTAS-------------------------*/
+/*---------------------------------------------------------------*/
+.section-open-positions .title {
     text-align: center;
     font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     text-align: center;
 }
 
-.section-areas .container-areas {
-    text-align: center;
+/*-------------------------VAGAS ABERTAS-------------------------*/
+/*---------------------------------------------------------------*/
+
+#section-footer {
+    background-color: rgb(45,181,194);
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    color: rgb(255,255,255);
 }
 
-    .section-areas .container-areas:after {
+    #section-footer .contato {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        text-align: center;
+        line-height: 30px;
+        font-family: Open Sans;
+        font-size: 16px;
+    }
+
+        #section-footer .contato .city-description {
+            font-weight: 700;
+        }
+
+        #section-footer .contato .address-description {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        #section-footer .contato .phone-description {
+            font-weight: 400;
+        }
+
+        #section-footer .contato .email-description {
+            font-weight: 700;
+        }
+
+    #section-footer .container-social {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+        #section-footer .container-social:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #section-footer .container-social .social {
+            width: 24%;
+            float: left;
+        }
+
+            #section-footer .container-social .social a {
+                color: rgb(255,255,255);
+            }
+
+    #section-footer:after {
         content: "";
         clear: both;
         display: table;
     }
-
-    .section-areas .container-areas .area-spacer {
-        width: 5%;
-        float: left;
-    }
-
-    .section-areas .container-areas .area {
-        width: 15%;
-        float: left;
-        font-family: "Open Sans";
-    }
-
-        .section-areas .container-areas .area span {
-            color: #524da0;
-        }
-
-        .section-areas .container-areas .area .area-description {
-            font-size: 11px;
-            margin-bottom: 4px;
-        }
-
-        .section-areas .container-areas .area .spots {
-            font-size: 9px;   
-        }
-
-/*----------------------------AREAS----------------------------*/
-/*-------------------------------------------------------------*/

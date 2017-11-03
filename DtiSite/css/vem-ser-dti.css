@@ -1,0 +1,122 @@
+﻿/*------------------------------------------------------------*/
+/*------------------------HEADER CARDS------------------------*/
+.header-cards > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-cards .card-square {
+    float: left;
+    position: relative;
+    width: 16.66%;
+    padding-bottom: 16.66%; /* = width for a 1:1 aspect ratio */
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.header-cards .card-simples-imagem .card-content {
+    position: absolute;
+    height: 100%; /* = 100% - 2*padding */
+    width: 80%; /* = 100% - 2*padding */
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+.header-cards .card-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.header-cards .card-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-cards:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*------------------------HEADER CARDS------------------------*/
+/*------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------*/
+/*--------------------TRANSFORMAÇÃO DIGITAL--------------------*/
+.section-digital-transformation {
+    padding-top: 45px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    .section-digital-transformation .transformacao-digital-title {
+        color: #524da0;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .section-digital-transformation .transformacao-digital-description {
+        color: #39393a;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+/*--------------------TRANSFORMAÇÃO DIGITAL--------------------*/
+/*-------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------*/
+/*----------------------------AREAS----------------------------*/
+.section-areas .title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-areas .container-areas {
+    text-align: center;
+}
+
+    .section-areas .container-areas:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .section-areas .container-areas .area-spacer {
+        width: 5%;
+        float: left;
+    }
+
+    .section-areas .container-areas .area {
+        width: 15%;
+        float: left;
+        font-family: "Open Sans";
+    }
+
+        .section-areas .container-areas .area span {
+            color: #524da0;
+        }
+
+        .section-areas .container-areas .area .area-description {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .section-areas .container-areas .area .spots {
+            font-size: 9px;   
+        }
+
+/*----------------------------AREAS----------------------------*/
+/*-------------------------------------------------------------*/

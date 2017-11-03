@@ -7,8 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{92213A76-605
 	ProjectSection(SolutionItems) = preProject
 		css\animate.css = css\animate.css
 		css\fonts.css = css\fonts.css
-		css\new.css = css\new.css
+		css\index.css = css\index.css
 		css\responsive.css = css\responsive.css
+		css\vem-ser-dti.css = css\vem-ser-dti.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{D01A5539-1562-4236-A6F1-DA55BC36A88C}"
@@ -46,6 +47,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11107927-3903-4FC0-B14E-77146469152D}"
 	ProjectSection(SolutionItems) = preProject
 		index.html = index.html
+		vem-ser-dti.html = vem-ser-dti.html
 	EndProjectSection
 EndProject
 Global

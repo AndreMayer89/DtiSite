@@ -46,7 +46,7 @@ img {
         #section-main .main-overlay p {
             color: #4a4a4a;
             font-family: Poppins;
-            font-size: 40px;
+            font-size: 32px;
             font-weight: 700;
             line-height: 50px;
             position: relative;
@@ -77,6 +77,24 @@ img {
             font-weight: 400;
             line-height: normal;
         }
+
+        #section-main .description .upper-menu {
+            display: table;
+            width: 100%;
+        }
+
+            #section-main .description .upper-menu > * {
+                display: table-cell;
+            }
+
+            #section-main .description .upper-menu a {
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            #section-main .description .upper-menu .menu-vertical-spacer {
+                width: 50%;
+            }
 
 @-webkit-keyframes changeBackground {
     0% {
@@ -132,6 +150,7 @@ img {
     width: 80%; /* = 100% - 2*padding */
     padding-left: 10%;
     padding-right: 10%;
+    cursor: pointer;
 }
 
 #section-cards .card-duplo-imagem .card-content {

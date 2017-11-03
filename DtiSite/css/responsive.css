@@ -63,6 +63,14 @@
         height: 480px;
     }
 
+        #section-main .description.flexible-fontsize h1 {
+            font-size: 36px;
+        }
+
+        #section-main .description.flexible-fontsize p.main-description {
+            font-size: 9px;
+        }
+
     #section-cards .card-square {
         width: 50%;
         padding-bottom: 50%; /* = width for a 1:1 aspect ratio */

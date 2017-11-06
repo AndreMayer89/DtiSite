@@ -1,134 +1,138 @@
 ﻿/*------------------------------------------------------------*/
 /*------------------------HEADER CARDS------------------------*/
-header .description .upper-menu {
-    display: table;
+header .main-container {
+    position: relative;
     width: 100%;
+    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    background-color: rgba(0,0,0,0.6);
 }
 
-    header .description .upper-menu > * {
-        display: table-cell;
+    header .main-container:after {
+        background-image: url(../img/cases.png);
     }
 
-    header .description .upper-menu a {
-        color: #FFFFFF;
-        cursor: pointer;
+    header .main-container .text-content {
+        position: absolute;
+        margin-top: 50%;
+        padding: 5%;
     }
 
-    header .description .upper-menu .menu-vertical-spacer {
-        width: 50%;
+        header .main-container .text-content p {
+            color: #FFFFFF;
+            font-size: 64px;
+            font-weight: bold;
+            font-family: Poppins;
+            line-height: 70px;
+        }
+
+    header .main-container:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
+
+header:after {
+    content: '';
+    clear: both;
+    display: table;
+}
 /*------------------------HEADER CARDS------------------------*/
 /*------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------*/
 /*----------------------------AREAS----------------------------*/
-
-/*----------------------------AREAS----------------------------*/
-/*-------------------------------------------------------------*/
-
-
-/*-------------------------VAGAS ABERTAS-------------------------*/
-/*---------------------------------------------------------------*/
-.section-open-positions .title {
-    text-align: center;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 35px;
-    text-align: center;
+.section-open-positions {
+    padding: 25px;
 }
 
-.section-open-positions .container-positions {
-    text-align: center;
-}
-
-    .section-open-positions .container-positions:after {
-        content: "";
-        clear: both;
-        display: table;
+    .section-open-positions .title {
+        color: #5c5c5c;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
     }
 
-    .section-open-positions .container-positions .position {
-        border: 1px solid #AEAEAE;
-        display: inline-block;
-        margin: 15px;
-        padding: 15px;
+    .section-open-positions .types {
+        margin-top: 25px;
     }
 
-        .section-open-positions .container-positions .position:after {
-            clear: both;
-            content: "";
-            display: table;
-        }
-
-        .section-open-positions .container-positions .position > div {
-            float: left;
-            margin: 5px;
-        }
-
-/*-------------------------VAGAS ABERTAS-------------------------*/
-/*---------------------------------------------------------------*/
-
-#section-footer {
-    background-color: rgb(45,181,194);
-    content: "";
-    clear: both;
-    display: table;
-    width: 100%;
-    color: rgb(255,255,255);
-    padding-top: 15px;
-}
-
-    #section-footer .contato {
-        display: flex;
-        flex-direction: column;
-        height: 250px;
-        text-align: center;
-        line-height: 30px;
-        font-family: Open Sans;
-        font-size: 16px;
-    }
-
-        #section-footer .contato .city-description {
+        .section-open-positions .types .type {
+            color: #2db5c2;
+            display: inline-block;
+            font-family: "Open Sans";
+            font-size: 10px;
             font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 12px;
+            padding: 3px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        #section-footer .contato .address-description {
-            font-size: 12px;
-            font-weight: 400;
-        }
-
-        #section-footer .contato .phone-description {
-            font-weight: 400;
-        }
-
-        #section-footer .contato .email-description {
-            font-weight: 700;
-        }
-
-    #section-footer .container-social {
-        padding-bottom: 15px;
-        text-align: center;
-    }
-
-        #section-footer .container-social:after {
-            clear: both;
-            content: "";
-            display: table;
-        }
-
-        #section-footer .container-social .social {
-            width: 24%;
-            float: left;
-        }
-
-            #section-footer .container-social .social a {
-                color: rgb(255,255,255);
+            .section-open-positions .types .type.active {
+                background-color: #2db5c2;
+                color: #FFFFFF;
             }
 
-    #section-footer:after {
-        clear: both;
-        content: "";
-        display: table;
+            .section-open-positions .types .type:hover {
+                border: 1px solid #2db5c2;
+            }
+
+    .section-open-positions .positions-by-type {
+        margin-top: 25px;
     }
+
+        .section-open-positions .positions-by-type hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .section-open-positions .positions-by-type .position {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+            .section-open-positions .positions-by-type .position:after {
+                content: '';
+                clear: both;
+                display: table;
+            }
+
+            .section-open-positions .positions-by-type .position > span {
+                display: inline-block;
+            }
+
+                .section-open-positions .positions-by-type .position > span.button-container {
+                    float: right;
+                }
+
+            .section-open-positions .positions-by-type .position .description {
+                color: #4a4a4a;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            .section-open-positions .positions-by-type .position button {
+                background-color: #2db5c2;
+                border: 0;
+                border-radius: 10px;
+                color: #ffffff;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 600;
+                min-height: 32px;
+            }
+/*----------------------------AREAS----------------------------*/
+/*-------------------------------------------------------------*/

@@ -75,4 +75,9 @@
         width: 50%;
         padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
     }
+
+    .main-container .text-content p.flexible-font {
+        font-size: 48px;
+        line-height: 56px;
+    }
 }

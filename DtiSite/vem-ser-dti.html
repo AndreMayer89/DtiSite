@@ -33,42 +33,98 @@
 </head>
 <body data-spy="scroll">
     <header>
-        <div class="upper-menu">
-            <span><img src="img/logo-transparente.png" /></span>
-            <span class="menu-vertical-spacer"></span>
-            <a><span class="fa fa-2x fa-bars"></span></a>
+        <div class="main-container">
+            <div class="text-content">
+                <p class="flexible-font">vem ser<br />dti</p>
+            </div>
         </div>
     </header>
     <div class="section-open-positions">
         <p class="title">Vagas abertas</p>
         <div class="types">
-            <p data-type="design">DESIGN</p>
-            <p data-type="development">DESENVOLVIMENTO</p>
-            <p data-type="management">GESTÃO</p>
-            <p data-type="other">OUTROS</p>
+            <p data-type="design" class="type active">DESIGN</p>
+            <p data-type="development" class="type">DESENVOLVIMENTO</p>
+            <p data-type="management" class="type">GESTÃO</p>
+            <p data-type="other" class="type">OUTROS</p>
         </div>
         <div class="positions-by-type">
-            <div data-type="design">
-                <p>Estágio em UX Design</p>
-                <p>UX Designer Pleno</p>
-                <p>Estágio em Design</p>
+            <div class="positions-container" data-type="design">
+                <div class="position">
+                    <span class="description">Estágio em UX Design</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">UX Designer Pleno</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Estágio em Design</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
             </div>
-            <div data-type="development hide">
-                <p>Vaga 1 Desenvolvedor</p>
-                <p>Vaga 2 Desenvolvedor</p>
-                <p>Vaga 3 Desenvolvedor</p>
-                <p>Vaga 4 Desenvolvedor</p>
-                <p>Vaga 5 Desenvolvedor</p>
-                <p>Vaga 6 Desenvolvedor</p>
+            <div class="positions-container" data-type="development" style="display: none;">
+                <div class="position">
+                    <span class="description">Vaga 1 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 2 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 3 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 4 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 5 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 6 Desenvolvedor</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
             </div>
-            <div data-type="management hide">
-                <p>Vaga 1 Gestão</p>
+            <div class="positions-container" data-type="management" style="display: none;">
+                <div class="position">
+                    <span class="description">Vaga 1 Gestão</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
             </div>
-            <div data-type="other hide">
-                <p>Vaga 1 Outros</p>
-                <p>Vaga 2 Outros</p>
-                <p>Vaga 3 Outros</p>
-                <p>Vaga 4 Outros</p>
+            <div class="positions-container" data-type="other" style="display: none;">
+                <div class="position">
+                    <span class="description">Vaga 1 Outros</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 2 Outros</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 3 Outros</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
+                <div class="position">
+                    <span class="description">Vaga 4 Outros</span>
+                    <span class="button-container"><button>Candidatar</button></span>
+                </div>
+                <hr />
             </div>
         </div>
     </div>
@@ -85,6 +141,14 @@
                 cursorwidth: "8px",
                 cursorborderradius: "10px",
                 cursorborder: "1px solid #000000",
+            });
+
+            $(document).on('click', '.section-open-positions .types .type', function () {
+                $('.positions-container').fadeOut(500);
+                $('.section-open-positions .types .type').removeClass('active');
+                var $dataType = $(this).attr('data-type');
+                $(this).addClass('active');
+                $('.positions-container[data-type="' + $dataType + '"]').fadeIn(500);
             });
         });
     </script>

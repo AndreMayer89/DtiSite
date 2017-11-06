@@ -76,7 +76,7 @@
             }
 
 .dtifacts {
-    background-color: #fafafa;;
+    background-color: #fafafa;
     content: "";
     clear: both;
     display: table;
@@ -84,51 +84,60 @@
 }
 
     .dtifacts .topo {
+        color: #524da0;
         display: block;
-        height: 100px;
+        height: 40px;
         padding-top: 10%;
         padding-left: 5%;
+        font-size: 24px;
+        font-family: Poppins;
+        font-weight: 700;
         text-align: start;
     }
-
-        .dtifacts .topo .dtifacts-title {
-            color: #524da0;
-            font-size: 24px;
-            font-family: Poppins;
-            font-weight: 700;
-            height: 40px;
-        }
 
     .dtifacts .second-title {
         display: block;
-        height: 100px;
+        height: 53px;
         padding-top: 10%;
         padding-left: 5%;
         text-align: start;
+        color: #4a4a4a;
+        font-size: 32px;
+        font-family: Poppins;
+        font-weight: 700;
     }
-        .dtifacts .-second-title .dtifacts-title-second-title {
-            color: #4a4a4a;
-            height: 53px;
-            font-size: 32px;
-            font-family: Poppins;
-            font-weight: 700;
-        }
 
     .dtifacts .meio {
         display: block;
-        height: 300px;
-        padding-top: 10%;
+        height: 320px;
+        padding-top: 20%;
         padding-left: 5%;
         text-align: start;
+        color: #4a4a4a;
+        font-family: Poppins;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
     }
-        .dtifacts .-meio .dtifacts-title-meio {
-            color: #4a4a4a;
-            height: 192px;
-            font-size: 56px;
-            font-family: Poppins;
-            font-weight: 700;
-            line-height: 64px;
+
+    .dtifacts .footer {
+        display: table;
+        height: 300px;
+        padding-bottom: 10%;
+        position: relative;
+        width: 100%;
+    }
+        .dtifacts .footer .img {
+            display: table-cell;
+            align-items: center;
+            text-align: center;
+            vertical-align: bottom;
         }
+            .dtifacts .footer .img .div-img {
+                display: inline-table;
+                height: 73px;
+                width: 87px;
+            }
 
 /*--------------------FOOTER--------------------*/
 /*----------------------------------------------*/

@@ -12,7 +12,7 @@
     #section-footer .topo {
         display: block;
         height: 150px;
-        padding-top: 10%;
+        padding-top: 20%;
         padding-left: 5%;
         text-align: start;
     }
@@ -23,19 +23,16 @@
             font-weight: 700;
         }
 
-    #section-footer .meio {
-        display: block;
-        height: 150px;
-    }
-
     #section-footer .contato {
         display: flex;
         flex-direction: column;
-        height: 250px;
-        text-align: center;
+        height: 200px;
+        text-align: start;
         line-height: 30px;
         font-family: Open Sans;
         font-size: 16px;
+        padding-top: 10%;
+        padding-left: 5%;
     }
 
         #section-footer .contato .city-description {
@@ -45,15 +42,38 @@
         #section-footer .contato .address-description {
             font-size: 12px;
             font-weight: 400;
+            line-height: 15px;
         }
 
         #section-footer .contato .phone-description {
             font-weight: 400;
+            line-height: 15px;
         }
 
         #section-footer .contato .email-description {
             font-weight: 700;
         }
+
+    #section-footer .more-info {
+        display: block;
+        height: 250px;
+        text-align: start;
+        line-height: 30px;
+        font-family: Open Sans;
+        font-size: 16px;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+        #section-footer .more-info .title {
+            font-weight: 700;
+        }
+
+        #section-footer .more-info .cargo {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+    }
 
     #section-footer .container-social {
         text-align: center;

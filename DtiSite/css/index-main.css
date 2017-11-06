@@ -1,6 +1,6 @@
 ﻿/*----------------------------------------------*/
 /*---------------------MAIN---------------------*/
-#section-main {
+header {
     background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
     background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
@@ -16,7 +16,7 @@
     position: relative;
 }
 
-    #section-main .main-overlay {
+    header .main-overlay {
         padding-left: 10%;
         padding-bottom: 10%;
         padding-top: 10%;
@@ -27,11 +27,11 @@
         animation-name: changeBackground;
     }
 
-        #section-main .main-overlay .middle-filler {
+        header .main-overlay .middle-filler {
             height: 50%;
         }
 
-        #section-main .main-overlay p {
+        header .main-overlay p {
             color: #4a4a4a;
             font-family: Poppins;
             font-size: 32px;
@@ -40,49 +40,56 @@
             position: relative;
         }
 
-    #section-main .description {
-        padding-left: 10%;
-        padding-top: 5%;
+    header .description {
         height: 100%;
     }
 
-        #section-main .description .middle-filler {
+        header .description .middle-filler {
             height: 50%;
         }
 
-        #section-main .description h1 {
+        header .description h1 {
             color: #ffffff;
             font-family: Poppins;
             font-size: 64px;
             font-weight: 700;
             line-height: 64px;
+            padding-left: 10%;
         }
 
-        #section-main .description p.main-description {
+        header .description p.main-description {
             color: #ffffff;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 400;
             line-height: normal;
+            padding-left: 10%;
         }
 
-        #section-main .description .upper-menu {
-            display: table;
-            width: 100%;
-        }
+.upper-menu {
+    display: table;
+    width: 100%;
+    padding: 20px;
+}
 
-            #section-main .description .upper-menu > * {
-                display: table-cell;
-            }
+    .upper-menu > span {
+        display: table-cell;
+    }
 
-            #section-main .description .upper-menu a {
-                color: #FFFFFF;
-                cursor: pointer;
-            }
+    .upper-menu .logo {
+        width: 25%;
+    }
 
-            #section-main .description .upper-menu .menu-vertical-spacer {
-                width: 50%;
-            }
+    .upper-menu .icon {
+        color: #FFFFFF;
+        cursor: pointer;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .upper-menu .spacer {
+        width: 50%;
+    }
 
 @-webkit-keyframes changeBackground {
     0% {

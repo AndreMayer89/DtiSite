@@ -1,14 +1,32 @@
 ﻿/*------------------------------------------------------------*/
 /*------------------------HEADER CARDS------------------------*/
-header .card-quadruplo-imagem {
-    float: left;
+header .main-container {
     position: relative;
     width: 100%;
     padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
-    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
 }
 
-    header .card-quadruplo-imagem:after {
+    header .main-container:after {
+        background-image: url(../img/cases.png);
+    }
+
+    header .main-container .text-content {
+        position: absolute;
+        height: 100%;
+        margin-top: 50%;
+        padding: 5%;
+    }
+
+        header .main-container .text-content p {
+            color: #FFFFFF;
+            font-size: 64px;
+            font-weight: bold;
+            font-family: Poppins;
+            line-height: 70px;
+        }
+
+    header .main-container:after {
         content: "";
         display: block;
         position: absolute;
@@ -21,22 +39,6 @@ header .card-quadruplo-imagem {
         height: 100%;
         z-index: -1;
     }
-
-    header .card-quadruplo-imagem.cases {
-        position: relative;
-        background-color: rgba(0,0,0,0.6);
-    }
-
-        header .card-quadruplo-imagem.cases .description {
-            color: #FFFFFF;
-            font-size: 64px;
-            font-weight: bold;
-            font-family: Poppins;
-        }
-
-        header .card-quadruplo-imagem.cases:after {
-            background-image: url(../img/cases.png);
-        }
 
 header:after {
     content: '';
@@ -90,33 +92,33 @@ header:after {
         margin-top: 25px;
     }
 
-    .section-open-positions .positions-by-type .position {
-    }
-
-        .section-open-positions .positions-by-type .position > span {
-            display: inline-block;
+        .section-open-positions .positions-by-type .position {
         }
 
-            .section-open-positions .positions-by-type .position > span.button-container {
-                float: right;
+            .section-open-positions .positions-by-type .position > span {
+                display: inline-block;
             }
 
-        .section-open-positions .positions-by-type .position p {
-            color: #4a4a4a;
-            font-family: "Open Sans";
-            font-size: 12px;
-            font-weight: 400;
-        }
+                .section-open-positions .positions-by-type .position > span.button-container {
+                    float: right;
+                }
 
-        .section-open-positions .positions-by-type .position button {
-            border-radius: 100px;
-            background-color: #2db5c2;
-            border: 0;
-            color: #ffffff;
-            font-family: "Open Sans";
-            font-size: 12px;
-            font-weight: 600;
-            min-height: 32px;
-        }
+            .section-open-positions .positions-by-type .position p {
+                color: #4a4a4a;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            .section-open-positions .positions-by-type .position button {
+                border-radius: 100px;
+                background-color: #2db5c2;
+                border: 0;
+                color: #ffffff;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 600;
+                min-height: 32px;
+            }
 /*----------------------------AREAS----------------------------*/
 /*-------------------------------------------------------------*/

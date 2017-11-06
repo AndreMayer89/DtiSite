@@ -74,5 +74,61 @@
             #section-footer .container-social .social a {
                 color: rgb(255,255,255);
             }
+
+.dtifacts {
+    background-color: #fafafa;;
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+    .dtifacts .topo {
+        display: block;
+        height: 100px;
+        padding-top: 10%;
+        padding-left: 5%;
+        text-align: start;
+    }
+
+        .dtifacts .topo .dtifacts-title {
+            color: #524da0;
+            font-size: 24px;
+            font-family: Poppins;
+            font-weight: 700;
+            height: 40px;
+        }
+
+    .dtifacts .second-title {
+        display: block;
+        height: 100px;
+        padding-top: 10%;
+        padding-left: 5%;
+        text-align: start;
+    }
+        .dtifacts .-second-title .dtifacts-title-second-title {
+            color: #4a4a4a;
+            height: 53px;
+            font-size: 32px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
+    .dtifacts .meio {
+        display: block;
+        height: 300px;
+        padding-top: 10%;
+        padding-left: 5%;
+        text-align: start;
+    }
+        .dtifacts .-meio .dtifacts-title-meio {
+            color: #4a4a4a;
+            height: 192px;
+            font-size: 56px;
+            font-family: Poppins;
+            font-weight: 700;
+            line-height: 64px;
+        }
+
 /*--------------------FOOTER--------------------*/
 /*----------------------------------------------*/

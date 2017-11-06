@@ -1,23 +1,5 @@
 ﻿/*------------------------------------------------------------*/
 /*------------------------HEADER CARDS------------------------*/
-header .description .upper-menu {
-    display: table;
-    width: 100%;
-}
-
-    header .description .upper-menu > * {
-        display: table-cell;
-    }
-
-    header .description .upper-menu a {
-        color: #FFFFFF;
-        cursor: pointer;
-    }
-
-    header .description .upper-menu .menu-vertical-spacer {
-        width: 50%;
-    }
-
 header .card-quadruplo-imagem {
     float: left;
     position: relative;
@@ -82,46 +64,59 @@ header:after {
         margin-top: 25px;
     }
 
-        .section-open-positions .types > p {
+        .section-open-positions .types .type {
             color: #2db5c2;
             display: inline-block;
             font-family: "Open Sans";
             font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-right: 16px;
+            margin-right: 12px;
+            padding: 3px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        .section-open-positions .types > p:active {
-            box-shadow: 0 0 0 rgba(0,0,0,0.15);
-            transition: box-shadow 0.3s ease-in-out;
-        }
+            .section-open-positions .types .type.active {
+                background-color: #2db5c2;
+                color: #FFFFFF;
+            }
+
+            .section-open-positions .types .type:hover {
+                border: 1px solid #2db5c2;
+            }
 
     .section-open-positions .positions-by-type {
         margin-top: 25px;
     }
 
-        .section-open-positions .positions-by-type .position {
+    .section-open-positions .positions-by-type .position {
+    }
+
+        .section-open-positions .positions-by-type .position > span {
+            display: inline-block;
         }
 
-            .section-open-positions .positions-by-type .position > span {
-                display: inline-block;
+            .section-open-positions .positions-by-type .position > span.button-container {
+                float: right;
             }
 
-            .section-open-positions .positions-by-type .position p {
-                color: #4a4a4a;
-                font-family: "Open Sans";
-                font-size: 12px;
-                font-weight: 400;
-            }
+        .section-open-positions .positions-by-type .position p {
+            color: #4a4a4a;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 400;
+        }
 
-            .section-open-positions .positions-by-type .position button {
-                border-radius: 100px;
-                background-color: #2db5c2;
-                color: #ffffff;
-                font-family: "Open Sans";
-                font-size: 12px;
-                font-weight: 600;
-            }
+        .section-open-positions .positions-by-type .position button {
+            border-radius: 100px;
+            background-color: #2db5c2;
+            border: 0;
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 600;
+            min-height: 32px;
+        }
 /*----------------------------AREAS----------------------------*/
 /*-------------------------------------------------------------*/

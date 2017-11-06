@@ -66,31 +66,6 @@ header {
             padding-left: 10%;
         }
 
-.upper-menu {
-    display: table;
-    width: 100%;
-    padding: 20px;
-}
-
-    .upper-menu > span {
-        display: table-cell;
-    }
-
-    .upper-menu .logo {
-        width: 25%;
-    }
-
-    .upper-menu .icon {
-        color: #FFFFFF;
-        cursor: pointer;
-        text-align: right;
-        vertical-align: middle;
-    }
-
-    .upper-menu .spacer {
-        width: 50%;
-    }
-
 @-webkit-keyframes changeBackground {
     0% {
         -webkit-transform: translateY(0);

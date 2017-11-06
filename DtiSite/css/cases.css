@@ -1,16 +1,12 @@
-/*----------------------------------------------*/
-/*--------------------GLOBAL--------------------*/
-body {
-    font-family: Open Sans;
-}
-
-img {
-    max-width: 100%;
-}
-
 #section-cards > div {
     padding-left: 0;
     padding-right: 0;
+}
+
+#section-cards:after {
+    content: '';
+    clear: both;
+    display: table;
 }
 
 .card-case {
@@ -44,79 +40,23 @@ img {
     text-transform: uppercase;
 }
 
-.c1{
-    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c1.png");
-
-    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c1.png");
-
-    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c1.png");
-
-    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c1.png");
+.c1 {
+    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c1.png");
+    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c1.png");
+    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c1.png");
+    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c1.png");
 }
 
-.c2{
-    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c2.png");
-
-    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c2.png");
-
-    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c2.png");
-
-    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c2.png");
+.c2 {
+    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c2.png");
+    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c2.png");
+    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c2.png");
+    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c2.png");
 }
 
-.c3{
-    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c3.png");
-
-    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c3.png");
-
-    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c3.png");
-
-    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url("../img/c3.png");
+.c3 {
+    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c3.png");
+    background-image: -moz-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c3.png");
+    background-image: -o-linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c3.png");
+    background-image: linear-gradient(top, rgba(13, 13, 13, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/c3.png");
 }
-
-/*--------------------GLOBAL--------------------*/
-/*----------------------------------------------*/
-
-/*----------------------------------------------*/
-/*-----------------MAP AND DIVE-----------------*/
-.dive {
-    padding-top: 45px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-    .dive .dive-title {
-        color: #524da0;
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .dive .dive-description {
-        color: #39393a;
-        font-family: "Open Sans";
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 45px;
-        text-align: left;
-    }
-
-.map {
-    height: 500px;
-}
-/*----------------------------------------------*/
-/*-----------------MAP AND DIVE-----------------*/

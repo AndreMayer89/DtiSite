@@ -1,0 +1,37 @@
+﻿/*----------------------------------------------*/
+/*--------------------GLOBAL--------------------*/
+body {
+    font-family: Open Sans;
+}
+
+img {
+    max-width: 100%;
+}
+
+.upper-menu {
+    display: table;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+    .upper-menu > span {
+        display: table-cell;
+    }
+
+    .upper-menu .logo {
+        width: 25%;
+    }
+
+    .upper-menu .icon {
+        color: #FFFFFF;
+        cursor: pointer;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .upper-menu .spacer {
+        width: 50%;
+    }
+/*--------------------GLOBAL--------------------*/
+/*----------------------------------------------*/

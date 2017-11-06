@@ -1,6 +1,6 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1024px) {
-    header {
+    .main-page header {
         max-height: 660px;
     }
 
@@ -12,7 +12,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 980px) {
-    header {
+    .main-page header {
         height: 600px;
     }
 
@@ -24,7 +24,7 @@
 
 /* Mobile Devices */
 @media only screen and (max-width : 720px) {
-    header {
+    .main-page header {
         height: 590px;
     }
 
@@ -36,7 +36,7 @@
 
 /* Mobile Devices */
 @media only screen and (max-width : 640px) {
-    header {
+    .main-page header {
         height: 590px;
     }
 
@@ -52,22 +52,22 @@
 
 /* Smaller Mobile Devices */
 @media only screen and (max-width : 480px) {
-    header {
+    .main-page header {
         height: 570px;
     }
 }
 
 /* Smallest Mobile Devices */
 @media only screen and (max-width : 320px) {
-    header {
+    .main-page header {
         height: 480px;
     }
 
-        header .description.flexible-fontsize h1 {
+        .main-page header .description.flexible-fontsize h1 {
             font-size: 36px;
         }
 
-        header .description.flexible-fontsize p.main-description {
+        .main-page header .description.flexible-fontsize p.main-description {
             font-size: 9px;
         }
 

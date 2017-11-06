@@ -6,12 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{92213A76-605E-4FE8-B406-B7F93B2E9E99}"
 	ProjectSection(SolutionItems) = preProject
 		css\animate.css = css\animate.css
+		css\cases.css = css\cases.css
 		css\fonts.css = css\fonts.css
 		css\index-cards.css = css\index-cards.css
 		css\index-footer.css = css\index-footer.css
 		css\index-main.css = css\index-main.css
 		css\index.css = css\index.css
 		css\responsive.css = css\responsive.css
+		css\vem-ser-dti-old.css = css\vem-ser-dti-old.css
 		css\vem-ser-dti.css = css\vem-ser-dti.css
 	EndProjectSection
 EndProject
@@ -49,7 +51,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{B7A0346E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11107927-3903-4FC0-B14E-77146469152D}"
 	ProjectSection(SolutionItems) = preProject
+		cases.html = cases.html
 		index.html = index.html
+		vem-ser-dti-old.html = vem-ser-dti-old.html
 		vem-ser-dti.html = vem-ser-dti.html
 	EndProjectSection
 EndProject

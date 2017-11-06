@@ -1,148 +1,28 @@
 ﻿/*------------------------------------------------------------*/
 /*------------------------HEADER CARDS------------------------*/
-.header-cards > div {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.header-cards .card-square {
-    float: left;
-    position: relative;
-    width: 16.66%;
-    padding-bottom: 16.66%; /* = width for a 1:1 aspect ratio */
-    overflow: hidden;
-    border: 1px solid black;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-}
-
-.header-cards .card-simples-imagem .card-content {
-    position: absolute;
-    height: 100%; /* = 100% - 2*padding */
-    width: 80%; /* = 100% - 2*padding */
-    padding-left: 10%;
-    padding-right: 10%;
-    cursor: pointer;
-}
-
-.header-cards .card-table {
+header .description .upper-menu {
     display: table;
     width: 100%;
-    height: 100%;
 }
 
-.header-cards .card-table-cell {
-    display: table-cell;
-    vertical-align: middle;
-}
+    header .description .upper-menu > * {
+        display: table-cell;
+    }
 
-.header-cards:after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    header .description .upper-menu a {
+        color: #FFFFFF;
+        cursor: pointer;
+    }
 
+    header .description .upper-menu .menu-vertical-spacer {
+        width: 50%;
+    }
 /*------------------------HEADER CARDS------------------------*/
 /*------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------*/
-/*--------------------TRANSFORMAÇÃO DIGITAL--------------------*/
-.section-digital-transformation {
-    padding-top: 35px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-    .section-digital-transformation .transformacao-digital-title {
-        color: #524da0;
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .section-digital-transformation .transformacao-digital-description {
-        color: #39393a;
-        font-family: "Open Sans";
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-/*--------------------TRANSFORMAÇÃO DIGITAL--------------------*/
-/*-------------------------------------------------------------*/
-
-
-/*-------------------------MENSAGEM CEO-------------------------*/
-/*--------------------------------------------------------------*/
-.section-ceo-message {
-    background: rgb(44,176,197); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, rgb(44,176,197), rgb(109,127,163)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgb(44,176,197), rgb(109,127,163)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgb(44,176,197), rgb(109,127,163)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgb(44,176,197), rgb(109,127,163)); /* Standard syntax */
-    height: 300px;
-}
-
-/*-------------------------MENSAGEM CEO-------------------------*/
-/*--------------------------------------------------------------*/
-
-/*-------------------------------------------------------------*/
 /*----------------------------AREAS----------------------------*/
-.section-areas {
-    padding-top: 25px;
-    margin-bottom: 35px;
-    border-bottom: 1px solid #AEAEAE;
-}
-
-    .section-areas .title {
-        text-align: center;
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 35px;
-        text-align: center;
-    }
-
-    .section-areas .container-areas {
-        text-align: center;
-        padding-left: 5%;
-    }
-
-        .section-areas .container-areas:after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .section-areas .container-areas .area-spacer {
-            width: 5%;
-            float: left;
-        }
-
-        .section-areas .container-areas .area {
-            width: 15%;
-            float: left;
-            font-family: "Open Sans";
-        }
-
-            .section-areas .container-areas .area span {
-                color: #524da0;
-            }
-
-            .section-areas .container-areas .area .area-description {
-                font-size: 11px;
-                margin-bottom: 4px;
-            }
-
-            .section-areas .container-areas .area .spots {
-                font-size: 9px;
-            }
 
 /*----------------------------AREAS----------------------------*/
 /*-------------------------------------------------------------*/

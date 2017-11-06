@@ -1,0 +1,197 @@
+﻿#section-cards > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#section-cards .card-duplo-imagem {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    overflow: hidden;
+    background-color: #00BBD3;
+    text-align: center;
+}
+
+.card-square {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%; /* = width for a 1:1 aspect ratio */
+    overflow: hidden;
+}
+
+#section-cards .card-simples-imagem .card-content {
+    position: absolute;
+    height: 100%; /* = 100% - 2*padding */
+    width: 80%; /* = 100% - 2*padding */
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+#section-cards .card-duplo-imagem .card-content {
+    position: absolute;
+    height: 100%;
+    padding-left: 10%;
+    font-size: 24px;
+}
+
+#section-cards .card-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#section-cards .card-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#section-cards .card-simples-imagem:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#section-cards .card-simples-imagem.sq1:after {
+    background-image: url(../img/sq1.png);
+}
+
+#section-cards .card-simples-imagem.sq2:after {
+    background-image: url(../img/sq2.png);
+}
+
+#section-cards .card-simples-imagem.sq3 {
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+}
+
+    #section-cards .card-simples-imagem.sq3:after {
+        background-image: url(../img/sq3.png);
+    }
+
+    #section-cards .card-simples-imagem.sq3 .description {
+        color: #00bbd3;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+#section-cards .card-simples-imagem.sq4 .text-header {
+    color: #00bbd3;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#section-cards .card-simples-imagem.sq4 .text-pre {
+    color: #7b7b7b;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#section-cards .card-simples-imagem.sq4 .text-content {
+    color: #7b7b7b;
+    font-size: 14px;
+}
+
+#section-cards .card-simples-imagem.sq5:after {
+    background-image: url(../img/sq5.png);
+}
+
+#section-cards .card-simples-imagem.sq6 {
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+}
+
+    #section-cards .card-simples-imagem.sq6:after {
+        background-image: url(../img/sq6.png);
+    }
+
+    #section-cards .card-simples-imagem.sq6 .description {
+        color: #00bbd3;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+#section-cards .card-simples-imagem.sq7:after {
+    background-image: url(../img/sq7.png);
+}
+
+#section-cards .card-simples-imagem.sq8:after {
+    background-image: url(https://scontent.fudi1-1.fna.fbcdn.net/v/t1.0-9/22851913_1088019711301100_3821706691807930601_n.jpg?oh=b36948ad9ed62bde96c8aeca5c2a0d14&oe=5A61CDB4);
+}
+
+#section-cards .card-simples-imagem:active {
+    background-color: rgba(0, 148, 255, 0.5);
+}
+
+#section-cards:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#section-cards .card-quadruplo-imagem {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    overflow: hidden;
+}
+
+    #section-cards .card-quadruplo-imagem:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    #section-cards .card-quadruplo-imagem.cases {
+        position: relative;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+        #section-cards .card-quadruplo-imagem.cases .description {
+            color: #FFFFFF;
+            font-size: 64px;
+            font-weight: bold;
+            font-family: Poppins;
+        }
+
+        #section-cards .card-quadruplo-imagem.cases:after {
+            background-image: url(../img/cases.png);
+        }
+
+.videoWrapper {
+    display: inline-block; /* let it be styled thusly */
+    padding: 0; /* get rid of pre-styling */
+    margin: 0;
+    width: 100%; /* take up full width available */
+    padding-top: 56.25%; /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px; /* don't want it to expand beyond padding */
+    position: relative; /* allow for absolute positioning of child elements */
+}
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

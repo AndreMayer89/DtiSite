@@ -1,0 +1,117 @@
+﻿/*----------------------------------------------*/
+/*---------------------MAIN---------------------*/
+#section-main {
+    background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 181, 194, 0.6)), color-stop(100%, rgba(29, 26, 75, 0.7))), url('../img/main-bg.png') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    background: linear-gradient(to bottom, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
+    color: #FFFFFF;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 100px;
+    height: 650px;
+    position: relative;
+}
+
+    #section-main .main-overlay {
+        padding-left: 10%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        -webkit-animation-name: changeBackground;
+        animation-name: changeBackground;
+    }
+
+        #section-main .main-overlay .middle-filler {
+            height: 50%;
+        }
+
+        #section-main .main-overlay p {
+            color: #4a4a4a;
+            font-family: Poppins;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 50px;
+            position: relative;
+        }
+
+    #section-main .description {
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 100%;
+    }
+
+        #section-main .description .middle-filler {
+            height: 50%;
+        }
+
+        #section-main .description h1 {
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 64px;
+        }
+
+        #section-main .description p.main-description {
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        #section-main .description .upper-menu {
+            display: table;
+            width: 100%;
+        }
+
+            #section-main .description .upper-menu > * {
+                display: table-cell;
+            }
+
+            #section-main .description .upper-menu a {
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            #section-main .description .upper-menu .menu-vertical-spacer {
+                width: 50%;
+            }
+
+@-webkit-keyframes changeBackground {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.typewriter-font a {
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: .15em;
+    overflow: hidden;
+}
+/*---------------------MAIN---------------------*/
+/*----------------------------------------------*/

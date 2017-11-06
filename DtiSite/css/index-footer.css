@@ -1,0 +1,78 @@
+﻿/*----------------------------------------------*/
+/*--------------------FOOTER--------------------*/
+#section-footer {
+    background-color: #3c3a5f;
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    color: rgb(255,255,255);
+}
+
+    #section-footer .topo {
+        display: block;
+        height: 150px;
+        padding-top: 10%;
+        padding-left: 5%;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 24px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
+    #section-footer .meio {
+        display: block;
+        height: 150px;
+    }
+
+    #section-footer .contato {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        text-align: center;
+        line-height: 30px;
+        font-family: Open Sans;
+        font-size: 16px;
+    }
+
+        #section-footer .contato .city-description {
+            font-weight: 700;
+        }
+
+        #section-footer .contato .address-description {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        #section-footer .contato .phone-description {
+            font-weight: 400;
+        }
+
+        #section-footer .contato .email-description {
+            font-weight: 700;
+        }
+
+    #section-footer .container-social {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+        #section-footer .container-social:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #section-footer .container-social .social {
+            width: 24%;
+            float: left;
+        }
+
+            #section-footer .container-social .social a {
+                color: rgb(255,255,255);
+            }
+/*--------------------FOOTER--------------------*/
+/*----------------------------------------------*/

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -28,10 +28,28 @@
     <script type="text/javascript" async src="https://use.fontawesome.com/f863437709.js"></script>
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-108923079-1"></script>
     <script type="text/javascript">
+        /*global dataLayer*/
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-108923079-1');
+        
+        var isMenuOpen = false;
+        
+        function openMenu() {
+            document.getElementById("menu-overlay").style.height = "100%";
+            isMenuOpen = true;
+        }
+        
+        function closeMenu() {
+            document.getElementById("menu-overlay").style.height = "0%";
+            isMenuOpen = false;
+        }
+        
+        window.addEventListener("scroll", function(evt) {
+            if(isMenuOpen) closeMenu();    
+        });
+        
     </script>
 </head>
 <body class="main-page" data-spy="scroll">
@@ -53,7 +71,7 @@
         <div class="upper-menu">
             <span class="logo"><img src="img/logo-transparente.png" /></span>
             <span class="spacer"></span>
-            <span class="fa fa-2x fa-bars icon"></span>
+            <span class="fa fa-2x fa-bars icon" onclick="openMenu()"></span>
         </div>
         <div class="description flexible-fontsize">
             <div class="middle-filler"></div>
@@ -61,6 +79,18 @@
             <p class="main-description">estratégias que transformam dados em<br />experiências e resultados</p>
         </div>
     </header>
+    
+    <div id="menu-overlay" class="menu-overlay">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" style="color:#00bbd3;">Home</a>
+            <a href="cases.html">Cases</a>
+            <a href="#">Blog</a>
+            <a href="#">Contato</a>
+        </div>
+    </div>
+    
     <div id="section-cards">
         <div class="card-duplo-imagem flexible-height">
             <div class="card-content">

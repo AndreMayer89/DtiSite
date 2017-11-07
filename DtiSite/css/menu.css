@@ -1,4 +1,4 @@
-﻿/*----------------------------------------------*/
+/*----------------------------------------------*/
 /*--------------------GLOBAL--------------------*/
 body {
     font-family: Open Sans;
@@ -33,5 +33,57 @@ img {
     .upper-menu .spacer {
         width: 50%;
     }
+    
+.menu-overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); 
+    background-color: rgba(255,255,255,1); 
+    overflow-x: hidden; 
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-overlay a {
+    padding: 6px;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #4a4a4a;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-overlay a:hover, .menu-overlay a:focus {
+    color: #f1f1f1;
+}
+
+.menu-overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .menu-overlay a {font-size: 20px}
+    .menu-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
 /*--------------------GLOBAL--------------------*/
 /*----------------------------------------------*/

@@ -24,6 +24,14 @@
     #section-cards .card-duplo-imagem.flexible-height {
         padding-bottom: 50%;
     }
+
+    #section-cards .cases.flexible-height {
+        padding-bottom: 100%;
+    }
+
+        #section-cards .cases.flexible-height .description {
+            margin-top: 65%;
+        }
 }
 
 /* Mobile Devices */

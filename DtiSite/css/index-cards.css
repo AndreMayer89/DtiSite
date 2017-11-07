@@ -143,7 +143,7 @@
 #section-cards .cases {
     float: left;
     width: 100%;
-    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    padding-bottom: 66.7%;
     background-color: rgba(0,0,0,0.6);
     position: relative;
 }
@@ -169,7 +169,7 @@
         font-weight: bold;
         font-family: Poppins;
         position: absolute;
-        margin-top: 65%;
+        margin-top: 44%;
         padding: 5%;
     }
 

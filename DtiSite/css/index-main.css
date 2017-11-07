@@ -1,4 +1,4 @@
-﻿/*----------------------------------------------*/
+/*----------------------------------------------*/
 /*---------------------MAIN---------------------*/
 header {
     background: -moz-linear-gradient(top, rgba(45, 181, 194, 0.6) 0%, rgba(29, 26, 75, 0.7) 100%), url('../img/main-bg.png') no-repeat;
@@ -87,6 +87,16 @@ header {
     100% {
         background-color: rgba(255, 255, 255, 0);
     }
+}
+
+.more-info .title {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.more-info .title:hover {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .typewriter-font a {

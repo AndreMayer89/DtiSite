@@ -1,9 +1,9 @@
-#section-cards > div {
+#case-cards > div {
     padding-left: 0;
     padding-right: 0;
 }
 
-#section-cards:after {
+#case-cards:after {
     content: '';
     clear: both;
     display: table;
@@ -17,25 +17,28 @@
     overflow: hidden;
     background-color: #00BBD3;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#section-cards .card-case .card-title {
+#case-cards .card-content {
     position: absolute;
     padding-left: 9%;
     margin-top: 33%;
+    text-align: left;
+}
+
+#case-cards .card-title {
     color: #ffffff;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 85px;
     font-weight: 700;
 }
 
-#section-cards .card-case .card-description {
-    position: absolute;
-    padding-left: 9%;
-    margin-top: 40%;
+#case-cards .card-description {
     color: #ffffff;
     font-family: "Open Sans";
-    font-size: 10px;
+    font-size: 42px;
     font-weight: 700;
     text-transform: uppercase;
 }

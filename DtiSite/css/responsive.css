@@ -20,6 +20,10 @@
         width: 33.3%;
         padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */
     }
+
+    #section-cards .card-duplo-imagem.flexible-height {
+        padding-bottom: 50%;
+    }
 }
 
 /* Mobile Devices */

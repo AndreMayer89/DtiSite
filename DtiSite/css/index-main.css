@@ -28,7 +28,7 @@ header {
     }
 
         header .main-overlay .middle-filler {
-            height: 70%;
+            height: 50%;
         }
 
         header .main-overlay p {
@@ -45,7 +45,7 @@ header {
     }
 
         header .description .middle-filler {
-            height: 50%;
+            height: 70%;
         }
 
         header .description h1 {

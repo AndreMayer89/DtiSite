@@ -46,7 +46,7 @@
 #section-cards .card-table-cell {
     display: table-cell;
     vertical-align: middle;
-} 
+}
 
 #section-cards .card-simples-imagem:after {
     content: "";
@@ -104,7 +104,7 @@
 }
 
 #section-cards .card-simples-imagem.sq5:after {
-    background-image: url(../img/sq5.png);
+    background-color: rgba(0,0,0,0.2);
 }
 
 #section-cards .card-simples-imagem.sq6 {

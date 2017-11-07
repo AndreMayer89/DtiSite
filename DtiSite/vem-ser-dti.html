@@ -55,78 +55,48 @@
         <div class="positions-by-type">
             <div class="positions-container" data-type="design">
                 <div class="position">
-                    <span class="description">Estágio em UX Design</span>
+                    <span class="description">Designer estagiário</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
-                    <span class="description">UX Designer Pleno</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Estágio em Design</span>
+                    <span class="description">Designer</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="development" style="display: none;">
                 <div class="position">
-                    <span class="description">Vaga 1 Desenvolvedor</span>
+                    <span class="description">Desenvolvedor estagiário</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
-                    <span class="description">Vaga 2 Desenvolvedor</span>
+                    <span class="description">Engenheiro de Software</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
-                    <span class="description">Vaga 3 Desenvolvedor</span>
+                    <span class="description">Desenvolvedor líder</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
-                    <span class="description">Vaga 4 Desenvolvedor</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Vaga 5 Desenvolvedor</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Vaga 6 Desenvolvedor</span>
+                    <span class="description">Arquiteto de software</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="management" style="display: none;">
                 <div class="position">
-                    <span class="description">Vaga 1 Gestão</span>
+                    <span class="description">Tech Manager</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="other" style="display: none;">
                 <div class="position">
-                    <span class="description">Vaga 1 Outros</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Vaga 2 Outros</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Vaga 3 Outros</span>
-                    <span class="button-container"><button>Candidatar</button></span>
-                </div>
-                <hr />
-                <div class="position">
-                    <span class="description">Vaga 4 Outros</span>
+                    <span class="description">Analista de qualidade</span>
                     <span class="button-container"><button>Candidatar</button></span>
                 </div>
                 <hr />
@@ -149,11 +119,13 @@
             });
 
             $(document).on('click', '.section-open-positions .types .type', function () {
-                $('.positions-container').fadeOut(500);
-                $('.section-open-positions .types .type').removeClass('active');
-                var $dataType = $(this).attr('data-type');
-                $(this).addClass('active');
-                $('.positions-container[data-type="' + $dataType + '"]').fadeIn(500);
+                if (!$(this).hasClass('active')) {
+                    $('.positions-container').fadeOut(500);
+                    $('.section-open-positions .types .type').removeClass('active');
+                    var $dataType = $(this).attr('data-type');
+                    $(this).addClass('active');
+                    $('.positions-container[data-type="' + $dataType + '"]').fadeIn(500);
+                }
             });
         });
     </script>

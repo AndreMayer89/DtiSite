@@ -8,6 +8,14 @@
         width: 33.3%;
         padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */
     }
+    
+    #case-cards .card-case .card-title {
+        font-size: 48px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 24px; 
+    }
 }
 
 /* Small Devices, Tablets */
@@ -32,6 +40,14 @@
         #section-cards .cases.flexible-height .description {
             margin-top: 65%;
         }
+        
+    #case-cards .card-case .card-title {
+        font-size: 38px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 19px; 
+    }
 }
 
 /* Mobile Devices */
@@ -51,6 +67,14 @@
         margin-left: -98.5px;
         margin-top: 0px;
     }
+    
+    #case-cards .card-case .card-title {
+        font-size: 30px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 15px; 
+    }
 }
 
 /* Mobile Devices */
@@ -67,6 +91,14 @@
     .section-areas .container-areas .area.flexible-area {
         width: 30%;
     }
+    
+    #case-cards .card-case .card-title {
+        font-size: 26px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 13px; 
+    }
 }
 
 /* Smaller Mobile Devices */
@@ -80,6 +112,14 @@
         height: 180px;
         margin-left: -98.5px;
         margin-top: 0px;
+    }
+    
+    #case-cards .card-case .card-title {
+        font-size: 20px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 10px; 
     }
 }
 
@@ -105,5 +145,13 @@
     .main-container .text-content p.flexible-font {
         font-size: 48px;
         line-height: 56px;
+    }
+    
+    #case-cards .card-case .card-title {
+        font-size: 18px; 
+    }
+    
+    #case-cards .card-case .card-description {
+        font-size: 9px; 
     }
 }

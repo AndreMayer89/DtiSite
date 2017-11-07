@@ -63,7 +63,7 @@
 }
 
 #section-cards .card-simples-imagem.sq1:after {
-    background-image: url(../img/sq1.png);
+    background-image: url(http://blog.dtidigital.com.br/wp-content/uploads/2017/11/pexels-photo-574070-400x190.jpeg);
 }
 
 #section-cards .card-simples-imagem.sq2:after {
@@ -123,11 +123,11 @@
     }
 
 #section-cards .card-simples-imagem.sq7:after {
-    background-image: url(../img/sq7.png);
+    background-image: url(https://scontent.fudi1-1.fna.fbcdn.net/v/t1.0-9/22851913_1088019711301100_3821706691807930601_n.jpg?oh=b36948ad9ed62bde96c8aeca5c2a0d14&oe=5A61CDB4);
 }
 
 #section-cards .card-simples-imagem.sq8:after {
-    background-image: url(https://scontent.fudi1-1.fna.fbcdn.net/v/t1.0-9/22851913_1088019711301100_3821706691807930601_n.jpg?oh=b36948ad9ed62bde96c8aeca5c2a0d14&oe=5A61CDB4);
+    background-image: url(../img/sq7.png);
 }
 
 #section-cards .card-simples-imagem:active {
@@ -173,7 +173,7 @@
         padding: 5%;
     }
 
-#section-cards #yt-container-1 {
+#section-cards #yt-container-1, #yt-container-2 {
     width: 640px;
     height: 360px;
     margin-left: -98.5px;

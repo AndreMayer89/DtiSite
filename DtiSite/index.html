@@ -54,9 +54,9 @@
 </head>
 <body class="main-page" data-spy="scroll">
     <header>
-        <div class="wow main-overlay" data-wow-delay="5s" data-wow-duration="2s">
-            <div class="wow slideOutRight middle-filler" data-wow-delay="5s" data-wow-duration="2s"></div>
-            <div class="wow slideOutRight" data-wow-delay="5s" data-wow-duration="2s">
+        <div class="wow main-overlay" data-wow-delay="2s" data-wow-duration="2s">
+            <div class="wow slideOutRight middle-filler" data-wow-delay="2s" data-wow-duration="2s"></div>
+            <div class="wow slideOutRight" data-wow-delay="2s" data-wow-duration="2s">
                 <div class="wow slideInUp" data-wow-duration="1s">
                     <p>Nativos digitais</p>
                 </div>
@@ -175,7 +175,7 @@
             <div class="card-content">
                 <div class="card-table">
                     <div class="card-table-cell">
-                        <div class=""></div>
+                        <div id="yt-container-2"></div>
                     </div>
                 </div>
             </div>
@@ -250,6 +250,10 @@
                 cursorborder: "1px solid #000000",
             });
 
+            $(document).on('click', '.sq1', function () {
+                window.open('http://blog.dtidigital.com.br/');
+            });
+
             $(document).on('click', '.sq4', function () {
                 window.open('http://blogs.gartner.com/marty-resnick/2017/09/19/augmented-reality-in-mobile-apps/');
             });
@@ -258,7 +262,7 @@
                 window.location.href = 'vem-ser-dti.html';
             });
 
-            $(document).on('click', '.sq8', function () {
+            $(document).on('click', '.sq7', function () {
                 window.open('https://www.facebook.com/dtidigitaltech/');
             });
 
@@ -269,8 +273,7 @@
 
 
         function onYouTubeIframeAPIReady() {
-            var player;
-            player = new YT.Player('yt-container-1', {
+            var player = new YT.Player('yt-container-1', {
                 videoId: 'TSccoUJ1vAQ',
                 width: 640,
                 height: 360,
@@ -294,6 +297,41 @@
                     onReady: function (e) {
                         e.target.mute();
                         var elContainer = document.getElementById('yt-container-1');
+                        elContainer.setAttribute('class', 'flexible-size');
+                        elContainer.setAttribute('title', 'video dti 1');
+                        elContainer.setAttribute('frameborder', '0');
+                        elContainer.setAttribute('allowfullscreen', '1');
+                        elContainer.setAttribute('gesture', 'media');
+                        elContainer.setAttribute('width', '640');
+                        elContainer.setAttribute('height', '360');
+                    }
+                }
+            });
+
+            var player2 = new YT.Player('yt-container-2', {
+                videoId: 'bV3ne7rvb3g',
+                width: 640,
+                height: 360,
+                playerVars: {
+                    autoplay: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    loop: 1,
+                    fs: 0,
+                    cc_load_policy: 0,
+                    iv_load_policy: 3,
+                    autohide: 1,
+                    rel: 0,
+                    disablekb: 1,
+                    enablejsapi: 1,
+                    widgetid: 2,
+                    wmode: 'transparent'
+                },
+                events: {
+                    onReady: function (e) {
+                        e.target.mute();
+                        var elContainer = document.getElementById('yt-container-2');
                         elContainer.setAttribute('class', 'flexible-size');
                         elContainer.setAttribute('title', 'video dti 1');
                         elContainer.setAttribute('frameborder', '0');

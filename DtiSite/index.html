@@ -118,7 +118,7 @@
             <div class="card-content">
                 <div class="card-table">
                     <div class="card-table-cell">
-                        <iframe id="video-1-inner" frameborder="0" allowfullscreen="1" gesture="media" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/TSccoUJ1vAQ?autohide=1&amp;autoplay=1&amp;fs=0&amp;showinfo=0&amp;modestBranding=1&amp;start=0&amp;controls=0&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=http%3A%2F%2Falegriadesign.com.br&amp;widgetid=1" style="width: 640px; height: 360px; margin-left: -98.5px; margin-top: 0px;"></iframe>
+                        <div id="yt-container-1"></div>
                     </div>
                 </div>
             </div>
@@ -182,9 +182,9 @@
             <p class="main-title">Quer saber mais?<br />Vem visitar a gente</p>
         </div>
         <div class="contato">
-                <p class="city-description">Belo Horizonte</p>
-                <p class="address-description">Antônio de Albuquerque, 330 - 14° andar</p>
-                <p class="phone-description">31 2514-0901 &nbsp&nbsp 31 2514-0501</p>
+            <p class="city-description">Belo Horizonte</p>
+            <p class="address-description">Antônio de Albuquerque, 330 - 14° andar</p>
+            <p class="phone-description">31 2514-0901 &nbsp&nbsp 31 2514-0501</p>
             <p class="email-description">contato@dtidigital.com.br</p>
         </div>
         <div class="more-info">
@@ -205,9 +205,11 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99xj6wbcH4a0-oXTY4df5jeVVjLOTgE0&callback=initMap"></script>
+
+    <script async src="https://www.youtube.com/iframe_api"></script>
     <script>
         var tipoTexto = true;
-        
+
         new WOW().init();
         $(function () {
             $('html').niceScroll({
@@ -234,6 +236,45 @@
                 window.location.href = 'cases.html';
             });
         });
+
+
+        function onYouTubeIframeAPIReady() {
+            var player;
+            player = new YT.Player('yt-container-1', {
+                videoId: 'TSccoUJ1vAQ',
+                width: 640,
+                height: 360,
+                playerVars: {
+                    autoplay: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    loop: 1,
+                    fs: 0,
+                    cc_load_policy: 0,
+                    iv_load_policy: 3,
+                    autohide: 1,
+                    rel: 0,
+                    disablekb: 1,
+                    enablejsapi: 1,
+                    widgetid: 1,
+                    wmode: 'transparent'
+                },
+                events: {
+                    onReady: function (e) {
+                        e.target.mute();
+                        var elContainer = document.getElementById('yt-container-1');
+                        elContainer.setAttribute('style', 'width: 640px; height: 360px; margin-left: -98.5px; margin-top: 0px;');
+                        elContainer.setAttribute('title', 'video dti 1');
+                        elContainer.setAttribute('frameborder', '0');
+                        elContainer.setAttribute('allowfullscreen', '1');
+                        elContainer.setAttribute('gesture', 'media');
+                        elContainer.setAttribute('width', '640');
+                        elContainer.setAttribute('height', '360');
+                    }
+                }
+            });
+        }
 
         function initMap() {
             var map = new google.maps.Map(document.getElementById('mapa'), {

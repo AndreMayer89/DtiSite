@@ -56,6 +56,10 @@
     #typewriterContainer .typewriter-font a {
         font-size: 38px;
     }
+    
+    #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
+        font-size: 42px;
+    }
 }
 
 /* Mobile Devices */
@@ -115,6 +119,10 @@
     #typewriterContainer .typewriter-font a {
         font-size: 28px;
     }
+    
+    #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
+        font-size: 36px;
+    }
 }
 
 /* Smaller Mobile Devices */
@@ -140,6 +148,10 @@
     
     #typewriterContainer .typewriter-font a {
         font-size: 22px;
+    }
+    
+    #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
+        font-size: 28px;
     }
 }
 
@@ -177,5 +189,9 @@
     
     #typewriterContainer .typewriter-font a {
         font-size: 18px;
+    }
+    
+    #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
+        font-size: 26px;
     }
 }

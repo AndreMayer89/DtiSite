@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{92213A76-605E-4FE8-B406-B7F93B2E9E99}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,6 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{D01A5539-156
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{F1A67A78-B547-4BC0-ADFB-C85907987ACE}"
 	ProjectSection(SolutionItems) = preProject
+		js\dti.js = js\dti.js
 		js\jquery.nicescroll.min.js = js\jquery.nicescroll.min.js
 		js\wow.min.js = js\wow.min.js
 	EndProjectSection

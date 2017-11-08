@@ -92,18 +92,12 @@
     </div>
     
     <div id="section-cards">
-        <div class="card-duplo-imagem flexible-height">
-            <div class="card-content">
-                <div class="card-table">
-                    <div class="card-table-cell">
-                        <div class="typewriter-font">
-                            <a href="" class="typewrite" data-period="2000" data-type='[ "somos dti digital", "somos digital crafters"]'>
-                                <center class="wrap">
-                                </center>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="typewriterContainer" id="typewriterContainer">
+            <div class="typewriter-font" id="typewriter">
+                <a href="" class="typewrite" data-period="2000" data-type='[ "somos dti digital", "somos digital crafters"]'>
+                    <center class="wrap">
+                    </center>
+                </a>
             </div>
         </div>
         <div class="card-square card-simples-imagem sq1">
@@ -377,6 +371,8 @@
             }
 
             this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            var textWidth = this.el.getBoundingClientRect().width;
+           // el.style.marginLeft = 
 
             var that = this;
             var delta = 200 - Math.random() * 100;
@@ -406,11 +402,6 @@
                     new TxtType(elements[i], JSON.parse(toRotate), period);
                 }
             }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
         };
 
     </script>

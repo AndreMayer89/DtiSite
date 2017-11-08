@@ -56,48 +56,48 @@
             <div class="positions-container" data-type="design">
                 <div class="position">
                     <span class="description">Designer estagiário</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/O5BQY1C4LoGTjpRr1">Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
                     <span class="description">Designer</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/pXaD4nLvC7RWBWVv2">Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="development" style="display: none;">
                 <div class="position">
                     <span class="description">Desenvolvedor estagiário</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/v9lWhw5XfOrTFqz33">Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
                     <span class="description">Engenheiro de Software</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/XhmL8038yhFueEPo2">Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
                     <span class="description">Desenvolvedor líder</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/3S3biJbCPLhZBLwI3">Candidatar</button></span>
                 </div>
                 <hr />
                 <div class="position">
                     <span class="description">Arquiteto de software</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/nfdKSA1aicqFKy863">Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="management" style="display: none;">
                 <div class="position">
                     <span class="description">Tech Manager</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/J8QcIxN1Nwmst1MC2">Candidatar</button></span>
                 </div>
                 <hr />
             </div>
             <div class="positions-container" data-type="other" style="display: none;">
                 <div class="position">
                     <span class="description">Analista de qualidade</span>
-                    <span class="button-container"><button>Candidatar</button></span>
+                    <span class="button-container"><button data-url="https://goo.gl/forms/f29Y9BwwhUNJvaV83">Candidatar</button></span>
                 </div>
                 <hr />
             </div>
@@ -126,6 +126,10 @@
                     $(this).addClass('active');
                     $('.positions-container[data-type="' + $dataType + '"]').fadeIn(500);
                 }
+            });
+
+            $(document).on('click', '.positions-container button', function () {
+                window.open($(this).attr('data-url'));
             });
         });
     </script>

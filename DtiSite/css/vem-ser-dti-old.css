@@ -68,7 +68,7 @@
 
     .section-digital-transformation .transformacao-digital-description {
         color: #39393a;
-        font-family: "Open Sans";
+        font-family: "Poppins";
         font-size: 12px;
         font-weight: 400;
         margin-bottom: 15px;
@@ -128,7 +128,7 @@
         .section-areas .container-areas .area {
             width: 15%;
             float: left;
-            font-family: "Open Sans";
+            font-family: "Poppins";
         }
 
             .section-areas .container-areas .area span {
@@ -206,7 +206,7 @@
         height: 250px;
         text-align: center;
         line-height: 30px;
-        font-family: Open Sans;
+        font-family: Poppins;
         font-size: 16px;
     }
 

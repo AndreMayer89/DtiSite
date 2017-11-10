@@ -68,7 +68,7 @@ header:after {
         .section-open-positions .types .type {
             color: #2db5c2;
             display: inline-block;
-            font-family: "Open Sans";
+            font-family: "Poppins";
             font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
@@ -119,7 +119,7 @@ header:after {
 
             .section-open-positions .positions-by-type .position .description {
                 color: #4a4a4a;
-                font-family: "Open Sans";
+                font-family: "Poppins";
                 font-size: 12px;
                 font-weight: 400;
             }
@@ -129,7 +129,7 @@ header:after {
                 border: 0;
                 border-radius: 10px;
                 color: #ffffff;
-                font-family: "Open Sans";
+                font-family: "Poppins";
                 font-size: 12px;
                 font-weight: 600;
                 min-height: 32px;

@@ -156,16 +156,11 @@
                 </div>
             </div>
         </div>
-        <div class="card-square card-simples-imagem sq5" onclick="playVideo()">
+        <div class="card-square card-simples-imagem sq5" onclick="reproduzirVideoPrincipal()">
             <div class="card-content">
                 <div class="card-table">
                     <div class="card-table-cell">
-                        <div class="description" id="">
-                            <img src="img/ponto.png" />
-                        </div>
-                        <video width="0" id="cardVideo">
-                            <source src="video/supermix.mp4"></source>
-                        </video>
+                        <div id="yt-container-1"></div>
                     </div>
                 </div>
             </div>
@@ -253,6 +248,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/dti.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99xj6wbcH4a0-oXTY4df5jeVVjLOTgE0&callback=initMap"></script>
 
     <script async src="https://www.youtube.com/iframe_api"></script>
@@ -270,7 +266,8 @@
             });
 
             $(document).on('click', '.sq1', function () {
-                window.open('http://blog.dtidigital.com.br/');
+                $('.card-table').load('http://blog.dtidigital.com.br .post-title');
+                /*window.open('http://blog.dtidigital.com.br/');*/
             });
 
             $(document).on('click', '.sq4', function () {
@@ -429,19 +426,6 @@
                 }
             }
         };
-
-
-        function playVideo() { 
-            var vid = document.getElementById("cardVideo");
-            vid.play();
-            if (vid.requestFullscreen) {
-            vid.requestFullscreen();
-            } else if (vid.mozRequestFullScreen) {
-            vid.mozRequestFullScreen();
-            } else if (vid.webkitRequestFullscreen) {
-            vid.webkitRequestFullscreen();
-            }
-        } 
 
     </script>
 </body>

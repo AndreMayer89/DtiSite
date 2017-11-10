@@ -161,6 +161,10 @@
     background-image: url(../img/sq7.png);
 }
 
+#section-cards .card-simples-imagem.sq5:after {
+    background-image: url(../img/giphy.gif);
+}
+
 #section-cards .card-simples-imagem:active {
     background-color: rgba(0, 148, 255, 0.5);
 }
@@ -241,6 +245,7 @@
     height: 360px;
     margin-left: -98.5px;
     margin-top: 0px;
+    display: none;
 }
 
 #section-cards .card-square > .card-content-overlay > .description {

@@ -13,6 +13,7 @@ img {
     padding: 20px;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 
     .upper-menu > span {

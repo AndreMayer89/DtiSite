@@ -29,6 +29,22 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-108923079-1');
+
+        var isMenuOpen = false;
+        
+        function openMenu() {
+            document.getElementById("menu-overlay").style.height = "100%";
+            isMenuOpen = true;
+        }
+        
+        function closeMenu() {
+            document.getElementById("menu-overlay").style.height = "0%";
+            isMenuOpen = false;
+        }
+        
+        window.addEventListener("scroll", function(evt) {
+            if(isMenuOpen) closeMenu();    
+        });
     </script>
 </head>
 <body data-spy="scroll">
@@ -44,6 +60,17 @@
             </div>
         </div>
     </header>
+    <div id="menu-overlay" class="menu-overlay">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" style="color:#00bbd3;">Home</a>
+            <a href="cases.html">Cases</a>
+            <a href="http://blog.dtidigital.com.br/">Blog</a>
+            <a href="vem-ser-dti.html">Vem ser dti</a>
+            <a href="index.html#section-footer">Contato</a>
+        </div>
+    </div>
     <div class="section-open-positions">
         <p class="title">Vagas abertas</p>
         <div class="types">

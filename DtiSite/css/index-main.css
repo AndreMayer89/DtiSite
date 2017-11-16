@@ -28,7 +28,7 @@ header {
     }
 
         header .main-overlay .middle-filler {
-            height: 50%;
+            height: 40%;
         }
 
         header .main-overlay p {
@@ -36,7 +36,7 @@ header {
             font-family: Poppins-Bold;
             font-size: 48px;
             font-weight: 700;
-            line-height: 50px;
+            line-height: 60px;
             position: relative;
         }
 

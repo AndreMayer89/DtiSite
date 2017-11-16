@@ -20,6 +20,10 @@
     #typewriterContainer .typewriter-font a {
         font-size: 44px;
     }
+
+    .social-media-home {
+        display: initial;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -60,6 +64,10 @@
     #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
         font-size: 42px;
     }
+
+    .social-media-home {
+        display: none;
+    }
 }
 
 /* Mobile Devices */
@@ -90,6 +98,10 @@
     
     #typewriterContainer .typewriter-font a {
         font-size: 32px;
+    }
+
+    .social-media-home {
+        display: none;
     }
 }
 
@@ -123,6 +135,10 @@
     #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
         font-size: 36px;
     }
+
+    .social-media-home {
+        display: none;
+    }
 }
 
 /* Smaller Mobile Devices */
@@ -152,6 +168,10 @@
     
     #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
         font-size: 28px;
+    }
+
+    .social-media-home {
+        display: none;
     }
 }
 
@@ -193,5 +213,9 @@
     
     #section-cards .card-square > .card-content-overlay > .description[id = "vemSerDti"] {
         font-size: 26px;
+    }
+
+    .social-media-home {
+        display: none;
     }
 }

@@ -104,6 +104,9 @@
                 color: rgb(255,255,255);
             }
 
+    .social-media-mobile{
+        display: none;
+    }
 .dtifacts {
     background-color: #fafafa;
     width: 100%;

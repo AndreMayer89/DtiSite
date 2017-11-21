@@ -75,6 +75,14 @@
             line-height: 15px;
         }
 
+        #section-footer .social-media-home {
+            position:relative;
+            top: -25%;
+            float: right;
+            padding-right: 8%;
+            line-height: 40px;
+        }
+
     #section-footer .container-social {
         text-align: center;
         padding-bottom: 40px;
@@ -88,7 +96,7 @@
         }
 
         #section-footer .container-social .social {
-            width: 24%;
+            width: 50pt;
             float: left;
         }
 

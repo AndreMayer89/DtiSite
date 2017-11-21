@@ -4,6 +4,10 @@
         max-height: 660px;
     }
 
+    .main-page #section-footer{
+        height: 660px;
+    }
+
     #section-cards .card-square {
         width: 33.3%;
         padding-bottom: 33.3%; /* = width for a 1:1 aspect ratio */
@@ -24,11 +28,19 @@
     .social-media-home {
         display: initial;
     }
+
+    .social-media-mobile{
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 980px) {
     .main-page header {
+        height: 600px;
+    }
+
+    .main-page #section-footer {
         height: 600px;
     }
 
@@ -68,11 +80,19 @@
     .social-media-home {
         display: none;
     }
+
+    .social-media-mobile{
+        display: initial;
+    }
 }
 
 /* Mobile Devices */
 @media only screen and (max-width : 720px) {
     .main-page header {
+        height: 590px;
+    }
+
+    .main-page #section-footer {
         height: 590px;
     }
 
@@ -103,11 +123,19 @@
     .social-media-home {
         display: none;
     }
+
+    .social-media-mobile{
+        display: initial;
+    }
 }
 
 /* Mobile Devices */
 @media only screen and (max-width : 640px) {
     .main-page header {
+        height: 590px;
+    }
+
+    .main-page #section-footer {
         height: 590px;
     }
 
@@ -139,12 +167,20 @@
     .social-media-home {
         display: none;
     }
+
+    .social-media-mobile{
+        display: initial;
+    }
 }
 
 /* Smaller Mobile Devices */
 @media only screen and (max-width : 480px) {
     .main-page header {
         height: 570px;
+    }
+
+    .main-page #section-footer {
+        height: 660px;
     }
 
     #section-cards #yt-container-1.flexible-size {
@@ -173,6 +209,10 @@
     .social-media-home {
         display: none;
     }
+
+    .social-media-mobile{
+        display: initial;
+    }
 }
 
 /* Smallest Mobile Devices */
@@ -189,6 +229,10 @@
             font-size: 9px;
         }
 
+    .main-page #section-footer {
+        height: 480px;
+    }
+    
     #section-cards .card-square {
         width: 50%;
         padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
@@ -217,5 +261,9 @@
 
     .social-media-home {
         display: none;
+    }
+
+    .social-media-mobile{
+        display: initial;
     }
 }

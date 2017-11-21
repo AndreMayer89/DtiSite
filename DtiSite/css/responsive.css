@@ -32,6 +32,33 @@
     .social-media-mobile{
         display: none;
     }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 30px !important;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+
+    #section-footer .vemSerDti {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -82,7 +109,34 @@
     }
 
     .social-media-mobile{
-        display: initial;
+        display: block !important;
+    }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 30px !important;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+    
+    #section-footer .vemSerDti {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
     }
 }
 
@@ -125,7 +179,34 @@
     }
 
     .social-media-mobile{
-        display: initial;
+        display: block !important;
+    }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 30px !important;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+
+    #section-footer .vemSerDti {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
     }
 }
 
@@ -169,7 +250,34 @@
     }
 
     .social-media-mobile{
-        display: initial;
+        display: block !important;
+    }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 30px !important;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+    
+    #section-footer .vemSerDti {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px;
+        padding-left: 5%;
+        float: left;
+        width:100%;
     }
 }
 
@@ -211,7 +319,34 @@
     }
 
     .social-media-mobile{
-        display: initial;
+        display: block !important;
+    }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 30px !important;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+    
+    #section-footer .vemSerDti {
+        margin-top: 50px !important;
+        padding-left: 5% !important;
+        float: left !important;
+        width:100% !important;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px !important;
+        padding-left: 5% !important;
+        float: left !important;
+        width:100% !important;
     }
 }
 
@@ -264,6 +399,34 @@
     }
 
     .social-media-mobile{
-        display: initial;
+        display: block !important;
+    }
+
+    #section-footer .topo {
+        display: block;
+        padding-top: 40px !important;
+        padding-left: 5% !important;
+        text-align: start;
+    }
+
+        #section-footer .topo .main-title {
+            font-size: 26px !important;
+            line-height: 40px;
+            font-family: OpenSans-Bold;
+            font-weight: 700;
+        }
+
+    #section-footer .vemSerDti {
+        margin-top: 50px !important;
+        padding-left: 5% !important;
+        float: left !important;
+        width:100%;
+    }
+
+    #section-footer .contato {
+        margin-top: 50px !important;
+        padding-left: 5% !important;
+        float: left !important;
+        width:100%;
     }
 }

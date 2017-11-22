@@ -227,6 +227,11 @@
     header .main-container .text-content {
         margin-top: 50% !important;
     }
+
+    header .main-overlay p {
+            font-size: 50px !important;
+            line-height: 65px !important;
+        }
 }
 
 /* Mobile Devices */
@@ -305,6 +310,11 @@
     header .main-container .text-content {
         margin-top: 50% !important;
     }
+
+    header .main-overlay p {
+            font-size: 45px !important;
+            line-height: 60px !important;
+        }
 }
 
 /* Smaller Mobile Devices */
@@ -381,6 +391,11 @@
     header .main-container .text-content {
         margin-top: 50% !important;
     }
+
+    header .main-overlay p {
+            font-size: 45px !important;
+            line-height: 60px !important;
+        }
 }
 
 /* Smallest Mobile Devices */
@@ -470,4 +485,9 @@
     header .main-container .text-content {
         margin-top: 50% !important;
     }
+
+    header .main-overlay p {
+            font-size: 45px !important;
+            line-height: 60px !important;
+        }
 }

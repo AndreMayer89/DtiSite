@@ -138,6 +138,18 @@
         float: left;
         width:100%;
     }
+
+    header .main-container {
+       padding-bottom: 100% !important;
+    }
+    header .main-container .text-content {
+        margin-top: 50% !important;
+    }
+
+    header .main-overlay p {
+            font-size: 60px !important;
+            line-height: 80px !important;
+        }
 }
 
 /* Mobile Devices */
@@ -207,6 +219,13 @@
         padding-left: 5%;
         float: left;
         width:100%;
+    }
+
+    header .main-container {
+       padding-bottom: 100% !important;
+    }
+    header .main-container .text-content {
+        margin-top: 50% !important;
     }
 }
 
@@ -279,6 +298,13 @@
         float: left;
         width:100%;
     }
+
+    header .main-container {
+       padding-bottom: 100% !important;
+    }
+    header .main-container .text-content {
+        margin-top: 50% !important;
+    }
 }
 
 /* Smaller Mobile Devices */
@@ -347,6 +373,13 @@
         padding-left: 5% !important;
         float: left !important;
         width:100% !important;
+    }
+
+    header .main-container {
+       padding-bottom: 100% !important;
+    }
+    header .main-container .text-content {
+        margin-top: 50% !important;
     }
 }
 
@@ -428,5 +461,13 @@
         padding-left: 5% !important;
         float: left !important;
         width:100%;
+    }
+
+    header .main-container {
+       padding-bottom: 100% !important;
+    }
+
+    header .main-container .text-content {
+        margin-top: 50% !important;
     }
 }

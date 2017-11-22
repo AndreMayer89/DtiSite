@@ -14,6 +14,8 @@ img {
     position: absolute;
     width: 100%;
     z-index: 1;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
     .upper-menu > span {

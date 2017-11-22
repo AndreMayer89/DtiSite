@@ -12,7 +12,7 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animista.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-footer.css">
     <link rel="stylesheet" href="css/index-main.css">
@@ -55,20 +55,27 @@
 </head>
 <body class="main-page" data-spy="scroll">
     <header>
-        <div class="wow main-overlay" data-wow-delay="2s" data-wow-duration="3s">
-            <div class="wow slideOutRight middle-filler" data-wow-delay="2s" data-wow-duration="3s"></div>
-            <div class="wow slideOutRight" data-wow-delay="2s" data-wow-duration="3s">
-                <div class="wow slideInUp" data-wow-duration="1s">
-                    <p>nativos</p>
+        <div class="main-overlay slide-out-top">
+            <div class="">
+                <div class="slide-out-right-1">
+                    <div class="slide-in-bottom-1">
+                        <p>nativos</p>
+                    </div>
                 </div>
-                <div class="wow slideInUp" data-wow-duration="1s">
-                    <p>digitais</p>
+                <div class="slide-out-right-2">
+                    <div class="slide-in-bottom-2">
+                        <p>digitais</p>
+                    </div>
                 </div>
-                <div class="wow slideInUp" data-wow-delay="0.25s" data-wow-duration="1s">
-                    <p>com alma</p>
+                <div class="slide-out-right-3">
+                    <div class="slide-in-bottom-3" >
+                        <p>com alma</p>
+                    </div>
                 </div>
-                <div class="wow slideInUp" data-wow-delay="0.5s" data-wow-duration="1s">
-                    <p>de artesãos</p>
+                <div class="slide-out-right-4">
+                    <div class="slide-in-bottom-4">
+                        <p>de artesãos</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,39 +284,7 @@
     <script>
         var tipoTexto = true;
 
-        new WOW().init();
-        $(function () {
-            $('html').niceScroll({
-                mousescrollstep: 70,
-                cursorcolor: "#00BBD3",
-                cursorwidth: "8px",
-                cursorborderradius: "10px",
-                cursorborder: "1px solid #000000",
-            });
-
-            $(document).on('click', '.sq1', function () {
-                $('.card-table').load('http://blog.dtidigital.com.br .post-title');
-                /*window.open('http://blog.dtidigital.com.br/');*/
-            });
-
-            $(document).on('click', '.sq4', function () {
-                window.open('http://blogs.gartner.com/marty-resnick/2017/09/19/augmented-reality-in-mobile-apps/');
-            });
-
-            $(document).on('click', '.sq6', function () {
-                window.location.href = 'vem-ser-dti.html';
-            });
-
-            $(document).on('click', '.sq7', function () {
-                window.open('https://www.facebook.com/dtidigitaltech/');
-            });
-
-            $(document).on('click', '.cases', function () {
-                window.location.href = 'cases.html';
-            });
-        });
-
-
+        
         function onYouTubeIframeAPIReady() {
             var player = new YT.Player('yt-container-1', {
                 videoId: 'TSccoUJ1vAQ',

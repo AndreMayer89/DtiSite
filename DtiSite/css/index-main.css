@@ -32,11 +32,11 @@ header {
         }
 
         header .main-overlay p {
-            color: #4a4a4a;
+            color: #ffffff;
             font-family: Poppins-Bold;
-            font-size: 48px;
+            font-size: 84px;
             font-weight: 700;
-            line-height: 60px;
+            line-height: 90px;
             position: relative;
         }
 
@@ -54,7 +54,7 @@ header {
             font-size: 64px;
             font-weight: 700;
             line-height: 64px;
-            padding-left: 8%;
+            padding-left: 10%;
         }
 
         header .description p.main-description {
@@ -63,14 +63,14 @@ header {
             font-size: 14px;
             font-weight: 400;
             line-height: 25px;
-            padding-left: 8%;
+            padding-left: 10%;
         }
     
         header .social-media-home {
             position:relative;
             top: -25%;
             float: right;
-            padding-right: 8%;
+            padding-right: 10%;
             line-height: 40px;
         }
 
@@ -90,11 +90,13 @@ header {
 
 @keyframes changeBackground {
     0% {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgba(62, 57, 144, 1);
+        z-index: 10000;
     }
 
     100% {
         background-color: rgba(255, 255, 255, 0);
+        z-index: 0;
     }
 }
 

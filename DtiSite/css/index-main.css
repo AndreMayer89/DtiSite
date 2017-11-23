@@ -43,6 +43,7 @@ header {
 
     header .description {
         height: 100%;
+        padding-bottom: 150px;
     }
 
         header .description .middle-filler {
@@ -52,19 +53,19 @@ header {
         header .description h1 {
             color: #ffffff;
             font-family: Poppins-Bold;
-            font-size: 64px;
+            font-size: 75pt;
             font-weight: 700;
-            line-height: 64px;
-            padding-left: 10%;
+            line-height: 80pt;
+            padding-left: 15%;
         }
 
         header .description p.main-description {
             color: #ffffff;
             font-family: Poppins-Light;
-            font-size: 14px;
+            font-size: 19pt;
             font-weight: 400;
-            line-height: 25px;
-            padding-left: 10%;
+            line-height: 26pt;
+            padding-left: 15%;
         }
     
         header .social-media-home {

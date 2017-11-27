@@ -2,6 +2,7 @@
     padding-left: 0;
     padding-right: 0;
     user-select: none;
+    z-index: 2;
 }
 
 #section-cards .card-duplo-imagem {
@@ -93,6 +94,21 @@
     cursor: auto;
 }
 
+#section-cards .card-simples-imagem.sq1 .text-header {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px;
+    font-family: "OpenSans-SemiBold";
+}
+
+#section-cards .card-simples-imagem.sq1 .text-pre {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "OpenSans-SemiBold";
+    margin: 40px;
+}
+
 #section-cards .card-simples-imagem.sq1:after {
     background-image: url(http://blog.dtidigital.com.br/wp-content/uploads/2017/11/pexels-photo-574070-400x190.jpeg);
 }
@@ -116,6 +132,16 @@
         font-weight: bold;
     }
 
+
+#section-cards .card-simples-imagem.sq3 .text-header {
+    color: #00bbd3;
+    font-size: 46px;
+    font-weight: bold;
+    margin: 40px;
+    font-family: "OpenSans-Bold";
+    line-height: 46px;
+}
+
 #section-cards .card-simples-imagem.sq4 .text-header {
     color: #00bbd3;
     font-size: 16px;
@@ -138,23 +164,38 @@
     background-color: rgba(0,0,0,0.2);
 }
 
+#section-cards .card-simples-imagem.sq9:after {
+    background-color: rgba(0,0,0,0.2);
+}
+
 #section-cards .card-simples-imagem.sq6 {
     position: relative;
     background-color: rgba(0,0,0,0.6);
 }
 
     #section-cards .card-simples-imagem.sq6:after {
-        background-image: url(../img/sq6.png);
+        background-image: url("../img/vem ser dti.jpg");
     }
 
     #section-cards .card-simples-imagem.sq6 .description {
         color: #00bbd3;
-        font-size: 32px;
+        font-size: 46px;
         font-weight: bold;
+        margin: 40px;
+        font-family: "OpenSans-Bold";
+        line-height: 46px;
     }
 
 #section-cards .card-simples-imagem.sq7:after {
-    background-image: url(https://scontent.fudi1-1.fna.fbcdn.net/v/t1.0-9/22851913_1088019711301100_3821706691807930601_n.jpg?oh=b36948ad9ed62bde96c8aeca5c2a0d14&oe=5A61CDB4);
+    background-image: url(../img/facebook.jpg);
+    width: 100%;
+}
+
+#section-cards .card-simples-imagem.sq7 .text-pre {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "OpenSans-SemiBold";
+    margin: 40px;
 }
 
 #section-cards .card-simples-imagem.sq8:after {
@@ -162,7 +203,13 @@
 }
 
 #section-cards .card-simples-imagem.sq5:after {
-    background-image: url(../img/giphy.gif);
+    background: url(../img/colaboradores.gif) ;
+    background-position: 25% 50%;
+}
+
+#section-cards .card-simples-imagem.sq9:after {
+    background: url(../img/casa.gif) ;
+    background-position: 50% 50%;
 }
 
 #section-cards .card-simples-imagem:active {
@@ -177,7 +224,20 @@
     background-repeat: no-repeat;
     background-position: center; 
     opacity:0;
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 187, 211, 0.9) 100%)
+    background-image: -webkit-linear-gradient(top, rgba(45, 181, 194, 0.8) 0%, rgba(45, 181, 194, 0.8) 100%)
+}
+
+#section-cards .card-content-overlay-dark {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center; 
+    opacity:0;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    display: flex;
+    align-items: center;
 }
 
 #section-cards .card-content-overlay .description {
@@ -197,8 +257,17 @@
     -o-transition: opacity 150ms linear;
 }
 
+#section-cards .card-simples-imagem:hover .card-content-overlay-dark, .card-simples-imagem:focus .card-content-overlay-dark {
+    opacity:1;
+    transition: opacity 150ms linear;
+    -webkit-transition: opacity 150ms linear;
+    -moz-transition: opacity 150ms linear;
+    -o-transition: opacity 150ms linear;
+}
+
+
 #section-cards .overlay-fb {
-    background-image: url("../img/fbLogo.png"), -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 187, 211, 0.9) 100%) ;
+    background-image: url("../img/fbLogo.png"), -webkit-linear-gradient(top, rgba(45, 181, 194, 0.8) 0%, rgba(45, 181, 194, 0.8) 0%) ;
 }
 
 #section-cards:after {

@@ -122,6 +122,10 @@
         </div>
     </div>
     
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <button>play fullscreen</button><br>
+    <div id="player"></div>
+
     <div id="section-cards">
         <div class="typewriterContainer" id="typewriterContainer">
             <div class="typewriter-font" id="typewriter">
@@ -219,7 +223,7 @@
                 </div>
             </div>
         </div>-->
-        <div class="card-square card-simples-imagem sq9">
+        <div class="card-square card-simples-imagem sq9" id="videoCasa">
             <div class="card-content">
                 <div class="card-table">
                     <div class="card-table-cell">
@@ -286,83 +290,50 @@
     <script src="js/dti.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99xj6wbcH4a0-oXTY4df5jeVVjLOTgE0&callback=initMap"></script>
 
-    <script async src="https://www.youtube.com/iframe_api"></script>
+    
+    <script>
+        
+        var player, iframe;
+        //var $ = document.querySelector.bind(document);
+
+        // init player
+        function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '0',
+            width: '0',
+            videoId: 'TSccoUJ1vAQ',
+            events: {
+            'onReady': onPlayerReady
+            }
+        });
+        }
+
+        // when ready, wait for clicks
+        function onPlayerReady(event) {
+        var player = event.target;
+        iframe = $('#player');
+        setupListener(); 
+        }
+
+        function setupListener (){
+        $('button').addEventListener('click', playFullscreen);
+        }
+
+        function playFullscreen (){
+        player.playVideo();//won't work on mobile
+        
+        var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+        if (requestFullScreen) {
+            requestFullScreen.bind(iframe)();
+        }
+    }
+    
+    </script>
+
+
     <script>
         var tipoTexto = true;
         var posicaoTela = 0;
-
-        
-        function onYouTubeIframeAPIReady() {
-            var player = new YT.Player('yt-container-1', {
-                videoId: 'TSccoUJ1vAQ',
-                width: 640,
-                height: 360,
-                playerVars: {
-                    autoplay: 1,
-                    controls: 0,
-                    showinfo: 0,
-                    modestbranding: 1,
-                    loop: 1,
-                    fs: 0,
-                    cc_load_policy: 0,
-                    iv_load_policy: 3,
-                    autohide: 1,
-                    rel: 0,
-                    disablekb: 1,
-                    enablejsapi: 1,
-                    widgetid: 1,
-                    wmode: 'transparent'
-                },
-                events: {
-                    onReady: function (e) {
-                        e.target.mute();
-                        var elContainer = document.getElementById('yt-container-1');
-                        elContainer.setAttribute('class', 'flexible-size');
-                        elContainer.setAttribute('title', 'video dti 1');
-                        elContainer.setAttribute('frameborder', '0');
-                        elContainer.setAttribute('allowfullscreen', '1');
-                        elContainer.setAttribute('gesture', 'media');
-                        elContainer.setAttribute('width', '640');
-                        elContainer.setAttribute('height', '360');
-                    }
-                }
-            });
-
-            var player2 = new YT.Player('yt-container-2', {
-                videoId: 'bV3ne7rvb3g',
-                width: 640,
-                height: 360,
-                playerVars: {
-                    autoplay: 1,
-                    controls: 0,
-                    showinfo: 0,
-                    modestbranding: 1,
-                    loop: 1,
-                    fs: 0,
-                    cc_load_policy: 0,
-                    iv_load_policy: 3,
-                    autohide: 1,
-                    rel: 0,
-                    disablekb: 1,
-                    enablejsapi: 1,
-                    widgetid: 2,
-                    wmode: 'transparent'
-                },
-                events: {
-                    onReady: function (e) {
-                        e.target.mute();
-                        var elContainer = document.getElementById('yt-container-2');
-                        elContainer.setAttribute('class', 'flexible-size');
-                        elContainer.setAttribute('title', 'video dti 1');
-                        elContainer.setAttribute('frameborder', '0');
-                        elContainer.setAttribute('allowfullscreen', '1');
-                        elContainer.setAttribute('gesture', 'media');
-                        elContainer.setAttribute('width', '640');
-                        elContainer.setAttribute('height', '360');
-                    }
-                }
-            });
-        }
 
         function initMap() {
             var map = new google.maps.Map(document.getElementById('mapa'), {
@@ -430,15 +401,24 @@
                 }
             }
 
-            $(document).ready(function(){                    
-                $(window).scroll(function(){                          
-                    if ($(this).scrollTop() > 140 && posicaoTela > $(this).scrollTop()) {
-                        $('#menu').fadeIn(500);
-                    } else {
-                        $('#menu').fadeOut(50);
-                    }
-                    posicaoTela = $(this).scrollTop();
-                });
+            $(document).ready(function(){
+                try {                    
+                    $(window).scroll(function(){                          
+                        if ($(this).scrollTop() > 140 && posicaoTela > $(this).scrollTop()) {
+                            try {
+                                $('#menu').fadeIn(500);
+                            }
+                            catch(err){}
+                        } else {
+                            try {
+                                $('#menu').fadeOut(50);
+                            }
+                            catch(err){}
+                        }
+                        posicaoTela = $(this).scrollTop();
+                    });
+                }
+            catch(err){}
             });
         };
 
